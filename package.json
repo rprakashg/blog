@@ -1,0 +1,55 @@
+{
+  "name": "blog",
+  "private": true,
+  "description": "Ram's blog built using gatsby",
+  "version": "1.0.0",
+  "author": "rprakashg <https://github.com/rprakashg>",
+  "dependencies": {
+    "bootstrap": "^5.0.2",
+    "gatsby": "^3.10.2",
+    "gatsby-plugin-emotion": "^6.10.0",
+    "gatsby-plugin-google-fonts": "^1.0.1",
+    "gatsby-plugin-image": "^1.10.1",
+    "gatsby-plugin-sharp": "^3.10.2",
+    "gatsby-remark-prismjs": "^5.7.0",
+    "gatsby-source-filesystem": "^3.10.0",
+    "gatsby-transformer-remark": "^4.7.0",
+    "gatsby-transformer-sharp": "^3.10.0",
+    "gh-pages": "^3.2.3",
+    "lodash": "^4.17.21",
+    "path": "^0.12.7",
+    "prismjs": "^1.24.1",
+    "prop-types": "^15.7.2",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-helmet": "^6.1.0",
+    "react-icons": "^4.2.0"
+  },
+  "devDependencies": {
+    "prettier": "^1.17.1"
+  },
+  "keywords": [
+    "kubernetes",
+    "servicemesh",
+    "openpolicyagent",
+    "envoyproxy"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "clean": "gatsby clean",
+    "deploy": "gatsby build && gh-pages -d public -b main",
+    "format": "prettier --write src/**/*.{js,jsx}",
+    "start": "npm run develop",
+    "serve": "gatsby serve",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rprakashg/blog"
+  },
+  "bugs": {
+    "url": "https://github.com/rprakashg/blog/issues"
+  }
+}
