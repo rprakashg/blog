@@ -6,15 +6,10 @@
     border-right: 1px solid #dee2e6!important;
 }
 
-.side-social-links {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-}
-
 .page-links {
     margin-top: 1rem;
     padding-top: 1rem;
-    font-family: "Raleway";
+    font-family: "Open Sans";
 }
 
 
@@ -24,11 +19,12 @@
 }
 
 small, h3, p {
-    font-family: 'Raleway';
+    font-family: 'Open Sans';
     
 }
 
 .author-bio {
     font-size: 2vw;
+    text-transform: uppercase;
 }
 

@@ -27,8 +27,7 @@ const PostList = (props) => {
                             <div key={post.node.id} className="container mt-5">
                                 <Link
                                     to={post.node.fields.slug}
-                                    className="text-dark"
-                                >
+                                    className="text-dark">
                                     <h2 className="title">{post.node.frontmatter.title}</h2>
                                 </Link>
                                 <small className="d-block text-info"><i>Posted on {post.node.frontmatter.date}</i>
@@ -36,8 +35,7 @@ const PostList = (props) => {
                                 <p className="mt-3 d-inline">{post.node.excerpt}</p>
                                 <Link
                                     to={post.node.fields.slug}
-                                    className="text-primary"
-                                >
+                                    className="text-primary">
                                     <small className="d-inline-block ml-3"> Read full post</small>
                                 </Link>
                                 <div className="d-block">

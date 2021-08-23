@@ -15,22 +15,19 @@ const Header = ({ siteTitle, tagline, author, contacts }) => {
       className="head-main"
       style={{
         background: `black`
-      }}
-    >
+      }}>
       <div className="head-elements"
         style={{
           margin: `0`,
           padding: `.75rem`
-        }}
-      >
+        }}>
         <h1 className="head-logo ml-4" style={{ margin: 0 }}>
           <Link
             to="/"
             style={{
               color: `white`,
               textDecoration: `none`,
-            }}
-          >
+            }}>
             {siteTitle}
           </Link>
         </h1>

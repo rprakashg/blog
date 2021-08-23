@@ -16,9 +16,13 @@ const Layout = ({ children }) => {
             url
             tagline
             author
-            contacts {
-              linkedin
+          }
+        }
+        allProfile {
+          nodes {
+            contact {
               github
+              linkedin
               stackoverflow
             }
           }
@@ -31,7 +35,7 @@ const Layout = ({ children }) => {
             siteTitle={data.site.siteMetadata.title}
             tagline={data.site.siteMetadata.tagline}
             author={data.site.siteMetadata.author}
-            contacts={data.site.siteMetadata.contacts} />
+            contacts={data.allProfile.nodes[0].contact} />
           <div
             style={{
               margin: `0 auto`,
@@ -45,7 +49,8 @@ const Layout = ({ children }) => {
               <p className="mt-5 text-muted d-inline">
                 <i>
                   Built with {` `} 
-                  <a className="text-info" href="https://www.gatsbyjs.org">Gatsby</a>
+                  <a className="text-info" href="https://www.gatsbyjs.org">Gatsby</a> and {` `}
+                  <a className="text-info" href="https://reactjs.org">React</a>
                 </i>
               </p>
             </footer>
