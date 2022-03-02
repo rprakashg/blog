@@ -1,5 +1,5 @@
 ---
-date: "2022-03-02"
+date: "2022-03-01"
 published: true
 title: "Pacific Northwest RHUG: March meeting"
 categories: ["RHUG"]
