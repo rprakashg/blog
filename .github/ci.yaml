@@ -1,0 +1,28 @@
+name: ci-pipeline
+on: 
+  pull_requests:
+    branches:
+    - main
+env:
+  GH_TOKEN
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: 'checkout'
+      uses: actions/checkout@v3
+    - name: 'setup'
+      uses: actions/setup-node@v3
+      with:
+        node-version: '16.x'
+        scope: '@rprakashg'
+      run: yarn install
+    
+    - name: 'build'
+      run: yarn run build
+    
+    - name: 'deploy'
+      run: yarn run deploy
+
+  publish:
+
