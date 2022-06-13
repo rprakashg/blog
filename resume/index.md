@@ -3,9 +3,15 @@ RAM GOPINATHAN
 
 CAREER SUMMARY
 --------------------
-* Full stack Engineer with 27+ years of experience building web, mobile and distributed systems
-* Extensive experience building container platforms and platform adoption within large enterprises
-* Digital
+* Architect/Full stack Engineer with 27+ years of experience building web, mobile and distributed systems
+* Extensive experience kubernetes based container platforms and platform adoption within large enterprises
+* Experienced in Kubernetes Multi cluster management and Kubernetes Multi cluster security
+* Experienced in developing Kubernetes Operators
+* Experienced in Implementing ServiceMesh in the enterprise on Istio and Envoy
+* Experienced in Implementing monitoring and observability solutions using Opensource.
+* Experienced developing web based experiences using Angular and Reactjs
+* Mobile application development on iOS & Android
+* Experienced implementing secure software supply chain
 
 SKILLS
 --------------------
@@ -61,6 +67,7 @@ contributing to Opensource communities
 * Contributed to two major aquisitions (Sprint & Layer3 TV) to bring integrated solutions to customers which led
 to massive growth for T-Mobile not only in wireless industry but also new lines of business like Home entertainment
 * Contributed extensively to kubernetes platform standardization efforts across cloud and on-premises teams
+* Contributed extensively to frontdoor/gateway project built on Kubernetes, Envoy, Gloo and Consul
 
 > Dec 2014 - Dec 2015
 :   *Enterprise Architect*
