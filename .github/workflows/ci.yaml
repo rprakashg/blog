@@ -16,8 +16,8 @@ jobs:
       with:
         node-version: '16.x'
         scope: '@rprakashg'
-      run: npm install -g gatsby-cli
-      run: yarn install
+    - run: npm install -g gatsby-cli
+    - run: yarn install
     
     - name: 'build'
       run: yarn run build
