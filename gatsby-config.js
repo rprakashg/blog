@@ -89,12 +89,5 @@ module.exports = {
         ]
       }
     },
-    {
-      resolve: 'gatsby-plugin-pdf',
-      options: {
-        path: "/resume",
-        outputPath: "/public/pdf",
-      },
-    }
   ],
 }
