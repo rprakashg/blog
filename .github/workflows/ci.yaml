@@ -1,6 +1,6 @@
 name: ci-pipeline
 on: 
-  pull_requests:
+  push:
     branches:
     - main
 env:
