@@ -7,7 +7,7 @@ CAREER SUMMARY
 * Extensive experience kubernetes based container platforms and platform adoption within large enterprises
 * Experienced in Kubernetes Multi cluster management and Kubernetes Multi cluster security
 * Experienced in developing Kubernetes Operators
-* Experienced in Implementing ServiceMesh in the enterprise on Istio and Envoy
+* Experienced in Implementing ServiceMesh in the enterprise with Istio and Envoy
 * Experienced in Implementing monitoring and observability solutions using Opensource.
 * Experienced developing web based experiences using Angular and Reactjs
 * Mobile application development on iOS & Android
