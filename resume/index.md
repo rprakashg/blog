@@ -1,132 +1,155 @@
 RAM GOPINATHAN
 =========================
 
-----
+CAREER SUMMARY
+--------------------
+* Architect/Full stack Engineer with 27+ years of experience building web, mobile and distributed systems
+* Extensive experience kubernetes based container platforms and platform adoption within large enterprises
+* Experienced in Kubernetes Multi cluster management and Kubernetes Multi cluster security
+* Experienced in developing Kubernetes Operators
+* Experienced in Implementing ServiceMesh in the enterprise with Istio and Envoy
+* Experienced in Implementing monitoring and observability solutions using Opensource.
+* Experienced developing web based experiences using Angular and Reactjs
+* Mobile application development on iOS & Android
+* Experienced implementing secure software supply chain
 
->  Specialties: C++, Python, Linux, Operations Research\
->  
-
-----
-
-Corporate Experience
+SKILLS
 --------------------
 
-Since 2013
-:   *Data Scientist for [Airconomy](https://www.airconomy.com/)*
-    (Frankfurt am Main, Germany).
+| Methodologies | Test Driven Development (TDD), Extreme Programming (XP)   |
+|---|---|
+| Languages and Development Tools   |  C#, PowerBuilder, Java, Golang, JavaScript, PLSQL, FxCop, NANT, NUnit, NDoc, NCover, Mock Object Framework (Nmock), TeamCity, SubVersion, MSBuild, PowerShell, Visual Studio, Sublime, Webstorm, IntelliJ, Artifactory, Jenkins |
+| Microservices frameworks   | SpringBoot, Quarkus, Vertx, GoKit  |
+| Observability & Monitoring  | Grafana, InfluxDB, Open Telemetry (OTel)  |
+| Container Tools | Docker, CRI-O, Podman, buildah, skopeo |
+| Container Platforms | PCF, Apache Mesos/Marathon, Kubernetes, EKS, AKS, GKE, OpenShift, OKD |
+| Databases | Oracle, PostgreSQL, MSSQL |
+| NoSQL | MongoDB, Cassandra, ElasticSearch |
+| Web Development | Angular, React |
+| Mobile Development | Android, iOS |
+| DevOps & Automation | Azure Resource Manager (ARM), AWS CloudFormation, Terraform, Ansible, Chef |
+| CI/CD | Gitlab, Github Actions, Jenkins, Tekton, Google Cloud Build |
+| Serverless & Function as Service | AWS Lambda, Knative, Google Cloud Run |
+| Public Cloud | Azure, AWS, GCP, IBM Cloud |
+| Service Mesh & Proxy Technologies | Istio, Envoy, HAProxy, NGINX |
+| API Gateway | Google Cloud APIGEE, AWS API Gateway | 
 
-    Data mining on various sources to forecast passenger demands over
-    airline networks.
+PROFESSIONAL EXPERIENCE
+--------------------
 
-2009-2012
-:   *PhD in Operations Research with
-    [Amadeus](http://www.amadeus.com/amadeus/amadeus.html)* (Sophia
-    Antipolis, France).
+>Aug 2021 - Present
+:   *Platform Architect * [Red Hat](https://www.redhat.com/)
 
-    Researched how to assign aircraft on an airline network in the most
-    efficient way. I authored several projects, including a C++ solver,
-    a Python suite of 20+ command line tools, and Hadoop data mining
-    scripts. I also worked as a teaching assistant at the university,
-    further improving my communication and public speaking skills.
+    As a Platform Architect focus primarily on Red Hat's Open Hybrid Cloud platform which includes OpenShift,
+    Multi cluster management, Multi cluster security and global Container registry as well as Ansible for automation.
+    
+Key responsibilities:
+* Work with enterprise customers to understand business problems and challenges and build demos with Red Hat platforms
+and solutions and assist in all phases of pre-sales as well as post sales with adoption and implementation in production
+* Contribute to Opensource CNCF projects and speak in internal and external conferences and events
+* Organize/Run Red Hat User Group in Seattle
 
-2008 (3 months)
-:   *Internship at [Rio Tinto Alcan](http://www.riotintoalcan.com/)*
-    (Clermont Ferrand, France).
+>Jan 2016 - April 2021
+:   *Sr. Member Of Technical Staff (Technical Director)*
+    [T-Mobile](http://www.t-mobile.com)
 
-    Co-authored a C++ library for optimizing the revenue of a metal
-    factory. This work was published in the corporate journal of the
-    company.
+    Sr. Member of Technical Staff with key focus on practical application of distributed architecture principles to business problems.  
+    This includes microservices, containers, and orchestration platforms (Kubernetes, Cloud Foundry, Mesos/Marathon), 
+    serverless computing, synchronous and asynchronous messaging and/or events, and cloud architectures, including public cloud, 
+    private cloud and hybrid cloud.
 
-2007 (3 months)
-:   *Internship at [GE
-    Healthcare](http://www3.gehealthcare.com/en/Global_Gateway)* (Paris,
-    France).
+Key accomplishments:
+* Kubernetes platform development and adoption
+* Played a key role in brining a culture of inner-source at T-Mobile and additionally drove Opensource at 
+T-Mobile which led to https://opensource.t-mobile.com and engineers presenting in conferences and 
+contributing to Opensource communities
+* As an Engineer/Architect contributed extensively to many enterprise releases across Digital and Front Line domains.
+* Contributed to two major aquisitions (Sprint & Layer3 TV) to bring integrated solutions to customers which led
+to massive growth for T-Mobile not only in wireless industry but also new lines of business like Home entertainment
+* Contributed extensively to kubernetes platform standardization efforts across cloud and on-premises teams
+* Contributed extensively to frontdoor/gateway project built on Kubernetes, Envoy, Gloo and Consul
 
-    Elaborated an UML spec for the refactoring of 20.000 lines of C++.
+> Dec 2014 - Dec 2015
+:   *Enterprise Architect*
 
-Selected Open Source Contributions
+    As an Enterprise Architect/Consultant worked on projects and training engagements for Microsoft and Visa. 
+
+Key accomplishments:
+* Fixed many of the bugs in an Employee HR/IT solution for Microsoft
+* Helped redesign a brand new payment application for Visa
+* Contributed to Development and Delivery of Azure Training for Microsoft through contracting with Opsgility 
+
+>Aug 2001 - Dec 2014
+:   *Architect*
+    As an Archiect worked on full time roles for AON Corporation, Saralee, Deloitte and contracting engagements
+    for Deloitte Tax and Federal Reserve Bank (Chicago & San Francisco)
+
+>Mar 1997 - Aug 2001
+:   *Sr. Software Development Engineer* (Future Technologies Inc.)
+    Worked as consultant for customers on Intranet/Internet, client server and n-tier applications across USA
+
+>Nov 1994 - Jan 1997
+:   *Software Development Engineer* (Leading Edge Systems Inc.)
+    As a Systems Engineer with Leading Edge worked on Client Server applications like Crisil 500 Index monitoring & Price capturing system, 
+    Treasury management system, etc. 
+
+
+Open Source Contributions
 ----------------------------------
 
-Python
-:   Contributor to [pulp-or](http://code.google.com/p/pulp-or/), a
-    linear programming Python library. Author of small tools, like
-    [michel](https://github.com/chmduquesne/michel), a command line
-    program providing bidirectionnal synchronization of google tasks
-    with text files.
+Telegraf
+:   Contributed some updates to documentation to [telegraf](https://github.com/influxdata/telegraf) project, a
+    plugin driven server agent for collecting and reporting metrics
 
-C++
-:   Author of
-    [yaposib](http://yaposib.readthedocs.org/en/latest/index.html), a
-    Python binding to COIN-OSI that is now supported by
-    [pulp-or](http://code.google.com/p/pulp-or/).
+Seattle Foodtruck Slackbot
+:   Creator of Seattle foodtruck slackbot 
+    [seafoodtruck-slack](https://github.com/exceller-io/seafoodtruck-slack), a
+    Slackbot written in Golang that provides a daily updates of foodtruck at a specified location
 
-C
-:   Author of
-    [lazylpsolverlibs](https://code.google.com/p/lazylpsolverlibs/), a
-    set of proxy libraries targeting cplex, gurobi and xpress. I also
-    started writing
-    [sharebox](https://github.com/chmduquesne/sharebox-fs), a
-    distributed FUSE file system based on git.
+Container builders
+:   Made several contributions to Google Cloud Builders
+    [Google Cloud Builders Community](https://github.com/GoogleCloudPlatform/cloud-builders-community), a
+    set of container builders that can be used in any CICD tools that supports containerized build stages. 
+    Cloud Build, Gitlab pipelines, Tekton and Github actions
 
-Java
-:   Author of [talkmyphone](http://code.google.com/p/talkmyphone/), an
-    android application allowing phone control via gtalk. It had 10.000+
-    downloads, and was forked 50 times. It was then successfully handed
-    over to [other developers](http://code.google.com/p/gtalksms/).
+Knative
+:   Contributed some documentation updates to [knative](https://github.com/knative/docs) project, a Kubernetes
+    based platform to build, deploy and manage modern serverless workloads
 
-Misc
-:   Lua, Ada, Bash, Makefile, m4, autotools, cmake... See my [github
-    résumé](http://resume.github.com/?chmduquesne). My
-    [kudorank](http://meta.ohloh.net/kudos/) on ohloh is 9, among the
-    top 2% of opensource developers.
+Speaking Engagements
+----------------------------------
 
-Linux
-:   My daily operating system: I [blog](http://blog.chmd.fr) about it
-    sometimes.
+Google Cloud Next 2018
+:   *Kubernetes, Serverless and You* 
+
+Kubecon NA 2018
+:   *T-Mobile Storelocator serverless journey with kubernetes and knative* 
+
+OSCON 2018
+:   *0 to 60 with cloud native application development using Netflix OSS stack*
+
+Cloudfoundry Summit 2018
+:   *Managing Session state with Redis and Spring Data Redis*
 
 Education
 ---------
 
-2009-2012
-:   *PhD in Mathematics and Computer Science at G-SCOP Laboratory*
-    (Grenoble, France).
-
-    Title: Integration of Fleet Deployment and of Passenger Service in
-    Airline Schedule Management. Done at Amadeus, in the Operation
-    Research team led by [Semi
-    Gabteni](http://www.linkedin.com/in/semigabteni). Advisors: [Denis
-    Naddef](http://www.g-scop.inpg.fr/~naddefd/), [Olivier
-    Briant](http://www.g-scop.inpg.fr/~brianto/index.php?page=1).
-    Defended in January 2013.
-
-2005-2009
-:   *MS in Computer Science in ENSIMAG* (Grenoble, France).
-
-    Top French school of Applied Mathematics and Computer Science with
-    highly selective recruitment.
-
-2002-2005
-:   *Preparatory classes in Lycée Thiers* (Marseille, France).
-
-    Mathematics and Physics courses before a national competitive
-    examination to Grandes Écoles.
+1990-1994
+:   *University Of Calicut, Bachelors Degree*
+    (Kerala, India)
 
 Activities and interests
 ------------------------
 
 Hobbies
-:   I like travelling. I backpacked in 13 countries in Eastern Europe
-    and South East Asia.
+:   Travelling. 20 countries and counting.
 
 Sports
-:   Running, Cycling, Hiking. I also played rugby union for 7 years.
-
-Activities
-:   I was the president of the [grand
-    cercle](http://www.grandcercle.org), one of the largest French
-    campus student associations (5.000 members) during university.
+:   Running, Cycling, Hiking. Weight training
 
 ----
 
-> <chmd@chmd.fr> • +336 84 14 26 82 • 28 years old\
->  275, chemin du Petit Castel - 13100 Aix en Provence, FRANCE
+> <rprakashg@gmail.com> • +1 312 520 8046 • \
+>  910 Lenora St \
+Unit S1203 \
+Seattle, WA 98121
