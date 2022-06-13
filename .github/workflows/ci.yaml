@@ -7,7 +7,7 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     env:
-      GH_TOKEN: ${{ secrets.TOKEN }}
+      GH_TOKEN: ${{ secret.TOKEN }}
     steps:
     - name: 'checkout'
       uses: actions/checkout@v3

@@ -16,8 +16,8 @@ module.exports = {
         css: "text-dark d-block py-1",
       },
       {
-        to: "/about",
-        text: "About",
+        to: "/resume",
+        text: "Resume",
         css: "text-dark d-block py-1",
       },
       {

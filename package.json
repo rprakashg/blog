@@ -40,7 +40,7 @@
     "build": "gatsby build",
     "develop": "gatsby develop",
     "clean": "gatsby clean",
-    "deploy": "gatsby build && gh-pages -d public -b main -r https://github.com/rprakashg/rprakashg.github.io.git",
+    "deploy": "gatsby build && gh-pages -d public -b main -r https://$GH_TOKEN@github.com/rprakashg/rprakashg.github.io.git",
     "format": "prettier --write src/**/*.{js,jsx}",
     "start": "npm run develop",
     "serve": "gatsby serve",
