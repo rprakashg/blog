@@ -6,8 +6,6 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    env:
-      GH_TOKEN: ${{ secret.TOKEN }}
     steps:
     - name: 'checkout'
       uses: actions/checkout@v3
@@ -16,6 +14,8 @@ jobs:
       with:
         node-version: '16.x'
         scope: '@rprakashg'
+      env:
+        GH_TOKEN: ${{ secrets.TOKEN }}
     - run: npm install -g gatsby-cli
     - run: yarn install
     
