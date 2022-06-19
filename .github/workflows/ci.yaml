@@ -6,7 +6,6 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    needs: convert-resume
     steps:
     - name: 'checkout'
       uses: actions/checkout@v3
@@ -48,6 +47,5 @@ jobs:
           --from=markdown
           --to=docx
           --output=public/resume/resume.docx resume/index.md
-
     - name: 'publish'
       run: yarn run deploy
