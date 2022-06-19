@@ -14,27 +14,27 @@ jobs:
       uses: docker://pandoc/core:2.9
       with:
         args: >-
-          --from=markdown
+          --from markdown
           --to html
-          --output=public/resume/index.html
+          -o public/resume/index.html
           resume/index.md
     - id: convert-to-pdf
       name: convert to pdf
       uses: docker://pandoc/core:2.9
       with:
         args: >-
-          --from=markdown
+          --from markdown
           --to pdf
-          --output=public/resume/resume.pdf
+          -o public/resume/resume.pdf
           resume/index.md
     - id: convert-to-docx
       name: convert to docx
       uses: docker://pandoc/core:2.9
       with:
         args: >-
-          --from=markdown
+          --from markdown
           --to docx
-          --output=public/resume/resume.docx
+          -o public/resume/resume.docx
           resume/index.md
 
   deploy:
@@ -55,7 +55,7 @@ jobs:
     
     - name: 'publish'
       run: yarn run deploy
-      
+
     - uses: actions/upload-artifact@master
       with:
         name: resume
