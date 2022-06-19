@@ -9,14 +9,18 @@ jobs:
     steps:
     - name: 'checkout'
       uses: actions/checkout@v3
-   # - id: convert-to-html
-   #   name: convert to html
-   #   uses: docker://pandoc/latex:2.9
-   #   with:
-   #     args: >-
-   #       --from=markdown
-   #       --to=html
-   #       --output=public/resume/index.html resume/index.md
+    - id: create-resume-folder
+      name: Create resume folder
+      run: >-
+        mkdir -p public/resume
+    - id: convert-to-html
+      name: convert to html
+      uses: docker://pandoc/latex:2.9
+      with:
+        args: >-
+          --from=markdown
+          --to=html
+          --output=public/resume/index.html resume/index.md
     - id: convert-to-pdf
       name: convert to pdf
       uses: docker://pandoc/latex:2.9
