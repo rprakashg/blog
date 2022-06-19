@@ -4,11 +4,22 @@ on:
     branches:
     - main
 jobs:
-  convert-resume:
+  deploy:
     runs-on: ubuntu-latest
+    needs: convert-resume
     steps:
     - name: 'checkout'
       uses: actions/checkout@v3
+    - name: 'setup'
+      uses: actions/setup-node@v3
+      with:
+        node-version: '16.x'
+        scope: '@rprakashg'
+      env:
+        GH_TOKEN: ${{ secrets.TOKEN }}
+    - run: npm install -g gatsby-cli
+    - run: yarn install
+    
     - id: create-resume-folder
       name: Create resume folder
       run: >-
@@ -38,26 +49,5 @@ jobs:
           --to=docx
           --output=public/resume/resume.docx resume/index.md
 
-  deploy:
-    runs-on: ubuntu-latest
-    needs: convert-resume
-    steps:
-    - name: 'checkout'
-      uses: actions/checkout@v3
-    - name: 'setup'
-      uses: actions/setup-node@v3
-      with:
-        node-version: '16.x'
-        scope: '@rprakashg'
-      env:
-        GH_TOKEN: ${{ secrets.TOKEN }}
-    - run: npm install -g gatsby-cli
-    - run: yarn install
-    
     - name: 'publish'
       run: yarn run deploy
-
-    - uses: actions/upload-artifact@master
-      with:
-        name: resume
-        path: public/resume
