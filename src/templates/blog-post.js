@@ -22,9 +22,6 @@ const BlogPost = (props) => {
         <div className="post-main">
           <div className="mt-3">
             <h2 className="heading">{post.frontmatter.title}</h2>
-            <div className="d-block">
-              
-            </div>
             <br />
             <small><i>Published on </i> {post.frontmatter.date}</small>
             <div dangerouslySetInnerHTML={{ __html: post.html }} />

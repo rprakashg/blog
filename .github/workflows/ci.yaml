@@ -1,9 +1,46 @@
-name: ci-pipeline
+name: run ci checks
 on: 
   push:
     branches:
     - main
 jobs:
+  convert-resume:
+    runs-on: ubuntu-latest
+    steps:
+    - name: 'checkout'
+      uses: actions/checkout@v3
+    - id: convert-to-html
+      name: convert to html
+      uses: docker://pandoc/core:2.9
+      with:
+        args: >-
+          --from=markdown
+          --to html
+          --output=public/resume/index.html
+          resume/index.md
+    - id: convert-to-pdf
+      name: convert to pdf
+      uses: docker://pandoc/core:2.9
+      with:
+        args: >-
+          --from=markdown
+          --to pdf
+          --output=public/resume/resume.pdf
+          resume/index.md
+    - id: convert-to-docx
+      name: convert to docx
+      uses: docker://pandoc/core:2.9
+      with:
+        args: >-
+          --from=markdown
+          --to docx
+          --output=public/resume/resume.docx
+          resume/index.md
+    uses: actions/upload-artifact@master
+    with:
+      name: resume
+      path: public/resume
+
   deploy:
     runs-on: ubuntu-latest
     steps:

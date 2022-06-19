@@ -1,3 +1,12 @@
+---
+date: "2017-06-27T06:42:03-07:00"
+published: true
+title: "Resume Of RAM GOPINATHAN"
+categories: ["resume"]
+tags: ["cloud", "containers", "kubernetes", "architecture", "developer", "hybrid cloud", "servicemesh"]
+archived: true
+---
+
 RAM GOPINATHAN
 =========================
 
@@ -12,6 +21,7 @@ CAREER SUMMARY
 * Experienced developing web based experiences using Angular and Reactjs
 * Mobile application development on iOS & Android
 * Experienced implementing secure software supply chain
+* Experience with GraphQL to connect microservices and data
 
 SKILLS
 --------------------
