@@ -11,28 +11,28 @@ jobs:
       uses: actions/checkout@v3
     - id: convert-to-html
       name: convert to html
-      uses: docker://pandoc/core:2.9
+      uses: docker://pandoc/latex:2.9
       with:
         args: >-
-          --from markdown
-          --to html
-          --output public/resume/index.html ${GITHUB_WORKSPACE}/resume/index.md
+          --from=markdown
+          --to=html
+          --output=public/resume/index.html resume/index.md
     - id: convert-to-pdf
       name: convert to pdf
-      uses: docker://pandoc/core:2.9
+      uses: docker://pandoc/latex:2.9
       with:
         args: >-
-          --from markdown
-          --to pdf
-          --output public/resume/resume.pdf ${GITHUB_WORKSPACE}/resume/index.md
+          --from=markdown
+          --to=pdf
+          --output=public/resume/resume.pdf resume/index.md
     - id: convert-to-docx
       name: convert to docx
-      uses: docker://pandoc/core:2.9
+      uses: docker://pandoc/latex:2.9
       with:
         args: >-
-          --from markdown
-          --to docx
-          --output public/resume/resume.docx ${GITHUB_WORKSPACE}/resume/index.md
+          --from=markdown
+          --to=docx
+          --output=public/resume/resume.docx resume/index.md
 
   deploy:
     runs-on: ubuntu-latest
