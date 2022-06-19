@@ -36,10 +36,6 @@ jobs:
           --to docx
           --output=public/resume/resume.docx
           resume/index.md
-    uses: actions/upload-artifact@master
-    with:
-      name: resume
-      path: public/resume
 
   deploy:
     runs-on: ubuntu-latest
@@ -59,3 +55,8 @@ jobs:
     
     - name: 'publish'
       run: yarn run deploy
+      
+    - uses: actions/upload-artifact@master
+      with:
+        name: resume
+        path: public/resume
