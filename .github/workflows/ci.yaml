@@ -16,8 +16,7 @@ jobs:
         args: >-
           --from markdown
           --to html
-          -o public/resume/index.html
-          resume/index.md
+          --output public/resume/index.html ${GITHUB_WORKSPACE}/resume/index.md
     - id: convert-to-pdf
       name: convert to pdf
       uses: docker://pandoc/core:2.9
@@ -25,8 +24,7 @@ jobs:
         args: >-
           --from markdown
           --to pdf
-          -o public/resume/resume.pdf
-          resume/index.md
+          --output public/resume/resume.pdf ${GITHUB_WORKSPACE}/resume/index.md
     - id: convert-to-docx
       name: convert to docx
       uses: docker://pandoc/core:2.9
@@ -34,8 +32,7 @@ jobs:
         args: >-
           --from markdown
           --to docx
-          -o public/resume/resume.docx
-          resume/index.md
+          --output public/resume/resume.docx ${GITHUB_WORKSPACE}/resume/index.md
 
   deploy:
     runs-on: ubuntu-latest
