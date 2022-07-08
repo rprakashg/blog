@@ -1,14 +1,14 @@
 ---
-date: "2017-06-27T06:42:03-07:00"
-published: true
-title: "Resume Of RAM GOPINATHAN"
-categories: ["resume"]
-tags: ["cloud", "containers", "kubernetes", "architecture", "developer", "hybrid cloud", "servicemesh"]
-archived: true
----
+title:
+- type: main
+  text: Resume Of Ram Gopinathan
+creator:
+- role: author
+  text: Ram Gopinathan
 
+---
 RAM GOPINATHAN
-=========================
+==============================================================
 
 CAREER SUMMARY
 --------------------
@@ -51,8 +51,8 @@ PROFESSIONAL EXPERIENCE
 
 Aug 2021 - Present:   *Platform Architect* [Red Hat](https://www.redhat.com/)
 
-    As a Platform Architect focus primarily on Red Hat's Open Hybrid Cloud platform which includes OpenShift,
-    Multi cluster management, Multi cluster security and global Container registry as well as Ansible for automation.
+As a Platform Architect focus primarily on Red Hat's Open Hybrid Cloud platform which includes OpenShift,
+Multi cluster management, Multi cluster security and global Container registry as well as Ansible for automation.
     
 Key responsibilities:
 
@@ -63,10 +63,10 @@ and solutions and assist in all phases of pre-sales as well as post sales with a
 
 Jan 2016 - April 2021:   *Sr. Member Of Technical Staff (Technical Director)* [T-Mobile](http://www.t-mobile.com)
 
-    Sr. Member of Technical Staff with key focus on practical application of distributed architecture principles to business problems.  
-    This includes microservices, containers, and orchestration platforms (Kubernetes, Cloud Foundry, Mesos/Marathon), 
-    serverless computing, synchronous and asynchronous messaging and/or events, and cloud architectures, including public cloud, 
-    private cloud and hybrid cloud.
+Sr. Member of Technical Staff with key focus on practical application of distributed architecture principles to business problems.  
+This includes microservices, containers, and orchestration platforms (Kubernetes, Cloud Foundry, Mesos/Marathon), 
+serverless computing, synchronous and asynchronous messaging and/or events, and cloud architectures, including public cloud, 
+private cloud and hybrid cloud.
 
 Key accomplishments:
 
@@ -81,7 +81,7 @@ contributing to Opensource communities
 
 Dec 2014 - Dec 2015:   *Enterprise Architect*
 
-    As an Enterprise Architect/Consultant worked on projects and training engagements for Microsoft and Visa. 
+As an Enterprise Architect/Consultant worked on projects and training engagements for Microsoft and Visa. 
 
 Key accomplishments:
 
@@ -91,17 +91,17 @@ Key accomplishments:
 
 Aug 2001 - Dec 2014:   *Software Architect*
 
-    As an Architect worked on full time roles for AON Corporation, Saralee, Deloitte and contracting engagements
-    for Deloitte Tax and Federal Reserve Bank (Chicago & San Francisco)
+As an Architect worked on full time roles for AON Corporation, Saralee, Deloitte and contracting engagements
+for Deloitte Tax and Federal Reserve Bank (Chicago & San Francisco)
 
 Mar 1997 - Aug 2001:   *Sr. Software Development Engineer* (Future Technologies Inc.)
 
-    Worked as consultant for customers on Intranet/Internet, client server and n-tier applications across USA
+Worked as consultant for customers on Intranet/Internet, client server and n-tier applications across USA
 
 Nov 1994 - Jan 1997:   *Software Development Engineer* (Leading Edge Systems Inc.)
 
-    As a Systems Engineer with Leading Edge worked on Client Server applications like Crisil 500 Index monitoring & Price capturing system, 
-    Treasury management system, etc. 
+As a Systems Engineer with Leading Edge worked on Client Server applications like Crisil 500 Index monitoring & Price capturing system, 
+Treasury management system, etc. 
 
 
 Open Source Contributions
@@ -126,21 +126,6 @@ Knative
 :   Contributed some documentation updates to [knative](https://github.com/knative/docs) project, a Kubernetes
     based platform to build, deploy and manage modern serverless workloads
 
-Speaking Engagements
-----------------------------------
-
-Google Cloud Next 2018
-:   *Kubernetes, Serverless and You* 
-
-Kubecon NA 2018
-:   *T-Mobile Storelocator serverless journey with kubernetes and knative* 
-
-OSCON 2018
-:   *0 to 60 with cloud native application development using Netflix OSS stack*
-
-Cloudfoundry Summit 2018
-:   *Managing Session state with Redis and Spring Data Redis*
-
 Education
 ---------
 
@@ -157,9 +142,12 @@ Hobbies
 Sports
 :   Running, Cycling, Hiking. Weight training
 
-----
 
 > <rprakashg@gmail.com> • +1 312 520 8046 • \
 >  910 Lenora St \
 Unit S1203 \
 Seattle, WA 98121
+
+------------------------
+
+Download My Resume [pdf](./resume.pdf) | [docx](./resume.docx)

@@ -1,28 +1,37 @@
 name: run ci checks
+
 on: 
   push:
     branches:
     - main
+
 jobs:
-  deploy:
+  build-deploy:
     runs-on: ubuntu-latest
+    
     steps:
-    - name: 'checkout'
+    - name: checkout
       uses: actions/checkout@v3
-    - name: 'setup'
+    
+    - name: setup node
       uses: actions/setup-node@v3
       with:
         node-version: '16.x'
         scope: '@rprakashg'
       env:
         GH_TOKEN: ${{ secrets.TOKEN }}
-    - run: npm install -g gatsby-cli
-    - run: yarn install
+    
+    - name: install gatsby cli
+      run: yarn global add gatsby-cli
+    
+    - name: install dependencies
+      run: yarn install
     
     - id: create-resume-folder
       name: Create resume folder
       run: >-
         mkdir -p public/resume
+
     - id: convert-to-html
       name: convert to html
       uses: docker://pandoc/latex:2.9
@@ -31,6 +40,7 @@ jobs:
           --from=markdown
           --to=html
           --output=public/resume/index.html resume/index.md
+    
     - id: convert-to-pdf
       name: convert to pdf
       uses: docker://pandoc/latex:2.9
@@ -39,6 +49,7 @@ jobs:
           --from=markdown
           --to=pdf
           --output=public/resume/resume.pdf resume/index.md
+    
     - id: convert-to-docx
       name: convert to docx
       uses: docker://pandoc/latex:2.9
@@ -47,5 +58,15 @@ jobs:
           --from=markdown
           --to=docx
           --output=public/resume/resume.docx resume/index.md
-    - name: 'publish'
-      run: yarn run deploy
+
+    - name: deploy
+      run: |
+        git config --global user.name $user_name
+        git config --global user.email $user_email
+        git remote set-url origin https://${github_token}@github.com/${repository}
+        yarn run deploy
+      env:
+        user_name: 'github-actions[bot]'
+        user_email: 'github-actions[bot]@users.noreply.github.com'
+        github_token: ${{ secrets.TOKEN }}
+        repository: ${{ github.repository }}
