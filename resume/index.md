@@ -1,11 +1,3 @@
----
-title:
-- type: main
-  text: Resume Of Ram Gopinathan
-creator:
-- role: author
-  text: Ram Gopinathan
----
 RAM GOPINATHAN
 ==============================================================
 
