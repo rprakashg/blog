@@ -1,6 +1,7 @@
 ---
 title: "Using docker for dynamically provisioning jenkins build slaves and running build jobs"
 date: 2017-07-07T23:49:22-07:00
+author: "Ram Gopinathan"
 published: true
 archived: true
 categories: ["jenkins", "docker"]

@@ -1,6 +1,7 @@
 ---
 title: "Golang Slack Bot"
 date: 2017-08-06T15:20:16-07:00
+author: "Ram Gopinathan"
 published: true
 archived: true
 categories: ["resources", "golang", "botdevelopment"]

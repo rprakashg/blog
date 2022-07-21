@@ -1,6 +1,7 @@
 ---
 date: "2021-08-22"
 published: true
+author: Ram Gopinathan
 title: "I've started a new job with Red Hat"
 categories: ["announcement"]
 tags: ["career", "job", "news"]

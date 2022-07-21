@@ -1,6 +1,7 @@
 ---
 title: "Going to production with Google Kubernetes Engine (GKE)"
 date: 2019-09-02T08:13:37-07:00
+author: Ram Gopinathan
 published: false
 archived: true
 categories: ["gke"]

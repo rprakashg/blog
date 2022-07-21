@@ -1,6 +1,7 @@
 ---
 title: "Configuration As Code With Docker and Spring Boot"
 date: 2017-09-22T09:55:57-07:00
+author: "Ram Gopinathan"
 published: true
 archived: true
 categories: ["spring boot", "config as code", "java", "docker"]

@@ -1,5 +1,6 @@
 ---
 date: "2017-06-27T06:42:03-07:00"
+author: "Ram Gopinathan"
 published: true
 title: "Cloudformation template for provisioning firehose with S3 delivery"
 categories: ["resources"]

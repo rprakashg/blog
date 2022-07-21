@@ -1,5 +1,6 @@
 ---
 date: "2017-06-10T10:03:20-07:00"
+author: Ram Gopinathan
 published: false
 archived: true
 title: "Setup prometheus on AWS using elastic beanstalk and docker"

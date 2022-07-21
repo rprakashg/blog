@@ -1,5 +1,6 @@
 ---
 date: "2022-07-08"
+author: "Ram Gopinathan"
 published: false
 title: "Seven reasons why I would buid my digital applications platform on OpenShift"
 categories: ["Platform"]

@@ -1,6 +1,7 @@
 ---
 title: "Dockerizing Hugo Sites"
 date: 2017-11-11T09:25:58-08:00
+author: "Ram Gopinathan"
 published: true
 archived: true
 categories: ["hugo", "docker", "blog"]

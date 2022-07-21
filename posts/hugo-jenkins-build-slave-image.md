@@ -1,6 +1,7 @@
 ---
 title: "Jenkins Build Slave Image For Building Hugo Projects"
 date: 2017-07-07T22:44:01-07:00
+author: "Ram Gopinathan"
 published: true
 archived: true
 categories: ["jenkins", "docker", "hugo"]

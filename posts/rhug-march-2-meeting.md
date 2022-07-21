@@ -1,5 +1,6 @@
 ---
 date: "2022-03-01"
+author: Ram Gopinathan
 published: true
 title: "Pacific Northwest RHUG: March meeting"
 categories: ["RHUG"]

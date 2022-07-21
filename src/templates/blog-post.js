@@ -23,12 +23,12 @@ const BlogPost = (props) => {
         <div className="sidebar px-4 py-2">
           <Sidebar />
         </div>
-
         <div className="post-main">
           <div className="mt-3">
             <h2 className="heading">{post.frontmatter.title}</h2>
-            <br />
-            <small><i>Published on </i> {post.frontmatter.date}</small>
+            <small className="d-block text-info">
+              <i>Published on {post.frontmatter.date} by {post.frontmatter.author}</i>
+            </small>
             <div dangerouslySetInnerHTML={{ __html: post.html }} />  
           </div>
         </div>
@@ -51,6 +51,7 @@ export const query = graphql`
         title
         date(formatString: "MMMM DD, YYYY")
         tags
+        author
       }
     }
   }

@@ -1,5 +1,6 @@
 ---
 title: "Updates To Foodtruck Bot"
+author: Ram Gopinathan
 date: 2017-08-13T12:19:42-07:00
 published: true
 archived: true

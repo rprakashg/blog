@@ -1,6 +1,7 @@
 ---
 title: "Automatically get latest Docker security vulnerabilities posted to slack channel"
 date: 2017-10-24T23:24:56-07:00
+author: "Ram Gopinathan"
 published: true
 archived: true
 categories: ["security", "docker"]

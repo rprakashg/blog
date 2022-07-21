@@ -1,5 +1,6 @@
 ---
 date: "2017-04-23T19:48:26-07:00"
+author: "Ram Gopinathan"
 title: "New blog"
 tags: ["aws", "s3", "cloudfront", "hugo", "website", "hosting"]
 categories: ["website", "hugo"]
