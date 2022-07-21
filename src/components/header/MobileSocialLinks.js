@@ -2,7 +2,10 @@ import React from "react";
 import {
     FaLinkedin,
     FaGithubSquare,
-    FaStackOverflow
+    FaStackOverflow,
+    FaTwitter,
+    FaFacebook,
+    FaInstagram
 } from "react-icons/fa"
 
 import "../layout.css"
@@ -10,7 +13,25 @@ import "../layout.css"
 const MobileSocialLinks = ({ contacts }) => {
     return (
         <div className="bottom-bar py-1">
-            <a className=" text-primary"
+            <a className="text-primary"
+                href={contacts.twitter}>
+                <span title="Twitter">
+                    <FaTwitter size={26} style={{ color: "primary" }} />
+                </span>
+            </a>
+            <a className="text-primary"
+                href={contacts.facebook}>
+                <span title="Facebook">
+                    <FaFacebook size={26} style={{ color: "primary" }} />
+                </span>
+            </a>
+            <a className="text-primary"
+                href={contacts.instagram}>
+                <span title="Instagram">
+                    <FaInstagram size={26} style={{ color: "primary" }} />
+                </span>
+            </a>
+            <a className="text-primary"
                 href={contacts.linkedin}>
                 <span title="Linked In">
                     <FaLinkedin size={26} style={{ color: "primary" }} />

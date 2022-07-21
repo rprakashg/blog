@@ -11,6 +11,11 @@ const BlogPost = (props) => {
   const siteUrl = props.data.site.siteMetadata.url
   const url = `${siteUrl}${props.pageContext.slug}`
   const tags = post.frontmatter.tags
+  const disqusConfig = {
+    url: siteUrl,
+    identifier: post.id,
+    title: post.title
+  }
 
   return (
     <Layout>
@@ -24,7 +29,7 @@ const BlogPost = (props) => {
             <h2 className="heading">{post.frontmatter.title}</h2>
             <br />
             <small><i>Published on </i> {post.frontmatter.date}</small>
-            <div dangerouslySetInnerHTML={{ __html: post.html }} />
+            <div dangerouslySetInnerHTML={{ __html: post.html }} />  
           </div>
         </div>
       </div>

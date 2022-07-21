@@ -21,6 +21,9 @@ const Layout = ({ children }) => {
         allProfile {
           nodes {
             contact {
+              twitter
+              instagram
+              facebook
               github
               linkedin
               stackoverflow

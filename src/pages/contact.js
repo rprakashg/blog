@@ -25,7 +25,7 @@ export default class ContactPage extends React.Component {
 
     handleSubmit = event => {
         event.preventDefault()
-        alert(this.state.subject)
+
         //validate all required values are entered before submitting the form
 
         //submit the form
