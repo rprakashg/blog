@@ -2,13 +2,13 @@
 date: "2022-07-08"
 author: "Ram Gopinathan"
 published: false
-title: "Seven reasons why I would buid my digital applications platform on OpenShift"
+title: "Eight reasons why I would buid my digital applications platform on OpenShift"
 categories: ["Platform"]
 tags: ["OpenShift", "Platform", "Kubernetes", "Digital"]
 archived: false
 ---
 
-A good solid digital applications platform is the foundation of any successful Digital Transformation and Application Modernization initiatives. Large enterprises often invest in this area as they embark on these initiatives. In this post, I wanted to talk about my top five reasons why I would build my digital applications platform on OpenShift. I'm going to deep dive into each in later articles with demos that showcase the capabilities I'm talking about here.
+A good solid digital applications platform is the foundation of any successful Digital Transformation and Application Modernization initiatives. Large enterprises often invest in this area as they embark on these initiatives. In this post, I wanted to talk about my top eight reasons why I would build my digital applications platform on OpenShift. I'm going to deep dive into each in later articles with demos that showcase the capabilities I'm talking about here.
 
 **1) Enterprise ready kubernetes**
 
@@ -48,10 +48,11 @@ Organizations require to prove to a third party that applications are continuall
 
 OpenShift comes with a compliance operator that can run compliance scans and recommends remediation actions. From a tooling perspective operators can use oc-compliance plugin with OpenShift cli (oc) to interact with the compliance operator. Compliance operator leverages OpenScap which is a NIST certified tool to scan and enforce security policies. Out of the box we give you a set of compliance profiles that represent different compliance benchmarks. If you want to learn more, check out this [link](https://docs.openshift.com/container-platform/4.10/security/compliance_operator/compliance-operator-understanding.html)
 
-**File Integrity Checking**
+**File Integrity Checking:**
+
 OpenShift provides a File Integrity Operator that can continually run file integrity checks on the nodes in a cluster and provide a log of files that have been modified. This can be beneficial for tracking and monitoring any unauthorized file modifications by bad actors.
 
-**Container Security**
+**Container Security:**
 
 A secure and highly available container registry is one of the components that should be a part of your enterprise application platform efforts. Container images of all applications running on the platform should come from this registry. Good practice to have guard rails set up on the platform that would only allow container images from an approved container registry and restrict images from public repositories. From a security and governance perspective, this is very important. 
 
@@ -72,11 +73,18 @@ OpenShift dedicated gives you the same OpenShift experience in the cloud provide
 
 This is super important. Most companies are now deploying workloads on multiple public clouds, on-premises sites, and even on the edge and if I'm responsible for providing platform services for the entire company choice of running where I want to run my platform will be super critical otherwise as a platform provider I have to invest a lot in maintaining skillset within the team for public clouds, on-premises, etc. You also have other concerns like developer experience. Most developers are now deploying workloads to multiple on-premises sites as well as in multiple clouds and you want them to have a consistent experience developing, testing, and deploying applications on the platform. Openshift provides you this choice, whether you are an operator or a developer regardless of where you are running your platform you have the same consistent experience. You don't need to learn new tools, methods, etc. 
  
+**6) Cost Management**
 
-**6) Make your developers contribute code on Day 1**
+Understanding and managing costs for your enterprise application platform is critical to the success of any enterprise platform.
+
+OpenShift provides a cost management service which allows customers to better understand cost associated with OpenShift across your hybdrid infrastructure from high level down to specific projects, departments and regions. It helps you visualize, understand and, analyze resource usage. You can map charges to projects, departments and regions through tagging. Identify patterns in spending. Improve communications with your customers by sharing real usage data. Cost models can be created and can be used to generate showback data.
+
+Cost Management is available as a SaaS service for OpenShift customers and is included with your OpenShift subscription.
+
+**7) Make your developers contribute code on Day 1**
 
 In today's modern cloud-native application development paradigm resource requirements for development environments are considerably higher than ever before and it's not always financially feasible to give all the developers laptops with enough CPU, RAM, SSD storage so they can be productive. In addition to this enterprise developers spend a considerable amount of time setting up their development environments with IDE and all the required tools they need so that they can develop and test applications that are deployed to kubernetes based environment. Openshift provides CodeReady workspaces that can address some of the challenges we discussed earlier. CodeReady workspaces are essentially development environments in the cloud. Developers use a browser to access their development environment and login with their credentials just as they would on a real laptop and start working on tasks assigned to them on day 1 without having to spend a considerable amount of time getting their development environments ready. We hope that enterprise developers can start committing code on day 1
 
-**7) Leveraging the benefits of the digital platform on day 1**
+**8) Leveraging the benefits of the digital platform on day 1**
 
 A digital application platform must be viewed as a tool to achieve digital transformation, app modernization goals but the reality is it's going to be a journey that takes time, especially when you look at it broadly as a whole enterprise. So the question comes how do I leverage the platform investments now. OpenShift provides a capability called OpenShift virtualization which allows you to simply migrate your legacy workload running on a VM to OpenShift and simultaneously work on transformation initiatives. This allows customers to leverage platform investments on day 1.

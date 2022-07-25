@@ -37,17 +37,40 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 800,
+            },
+          },
+          {
+            resolve: `gatsby-remark-prismjs`,
+            options: {
+              classPrefix: "language-",
+              inlineCodeMarker: null,
+              aliases: {},
+              showLineNumbers: false,
+              noInlineHighlight: false,
+            }
+          }
+        ]
+      }   
+    },
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/posts`,
-        name: `blog`,
+        path: `${__dirname}/src/images`,
+        name: `images`,
       },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `images`,
-        path: `${__dirname}/src/images`,
+        path: `${__dirname}/posts`,
+        name: `blog`,
       },
     },
     {
@@ -62,23 +85,6 @@ module.exports = {
       options: {
         typeName: `Profile`
       }
-    },
-    {
-      resolve: `gatsby-transformer-remark`,
-      options: {
-        plugins: [
-          {
-            resolve: `gatsby-remark-prismjs`,
-            options: {
-              classPrefix: "language-",
-              inlineCodeMarker: null,
-              aliases: {},
-              showLineNumbers: false,
-              noInlineHighlight: false,
-            }
-          }
-        ]
-      }   
     },
     {
       resolve: `gatsby-plugin-google-fonts`,
