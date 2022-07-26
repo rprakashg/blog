@@ -1,14 +1,14 @@
 ---
-date: "2022-07-08"
+date: "2022-07-25"
 author: "Ram Gopinathan"
-published: false
+published: true
 title: "Eight reasons why I would buid my digital applications platform on OpenShift"
 categories: ["Platform"]
 tags: ["OpenShift", "Platform", "Kubernetes", "Digital"]
 archived: false
 ---
 
-A good solid digital applications platform is the foundation of any successful Digital Transformation and Application Modernization initiatives. Large enterprises often invest in this area as they embark on these initiatives. In this post, I wanted to talk about my top eight reasons why I would build my digital applications platform on OpenShift. I'm going to deep dive into each in later articles with demos that showcase the capabilities I'm talking about here.
+A good solid digital applications platform is the foundation of any successful Digital Transformation and Application Modernization initiatives. Large enterprises often invest in this area as they embark on these initiatives. In this post, I wanted to talk about my top eight reasons why I would build my digital applications platform on OpenShift. Just to be clear these aren't listed in any order of priority, they are just my 8 reasons. In later articles I'm going to deep dive into each with demos that showcase the capabilities I'm talking about here.
 
 **1) Enterprise ready kubernetes**
 
@@ -88,3 +88,8 @@ In today's modern cloud-native application development paradigm resource require
 **8) Leveraging the benefits of the digital platform on day 1**
 
 A digital application platform must be viewed as a tool to achieve digital transformation, app modernization goals but the reality is it's going to be a journey that takes time, especially when you look at it broadly as a whole enterprise. So the question comes how do I leverage the platform investments now. OpenShift provides a capability called OpenShift virtualization which allows you to simply migrate your legacy workload running on a VM to OpenShift and simultaneously work on transformation initiatives. This allows customers to leverage platform investments on day 1.
+
+As always reach out to me if you have any questions or comments about this post. 
+
+Thanks,
+Ram
