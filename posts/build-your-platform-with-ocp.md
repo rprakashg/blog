@@ -2,7 +2,7 @@
 date: "2022-07-25"
 author: "Ram Gopinathan"
 published: true
-title: "Eight reasons why I would buid my digital applications platform on OpenShift"
+title: "Eight reasons why I would build my digital applications platform on OpenShift"
 categories: ["Platform"]
 tags: ["OpenShift", "Platform", "Kubernetes", "Digital"]
 archived: false
