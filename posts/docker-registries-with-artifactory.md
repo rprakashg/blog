@@ -55,4 +55,4 @@ docker push artifactory host}/{docker release registry}/{image name}:{tag}
 
 Below is a diagram that shows how we use artifactory for hosting private docker registries
 
-![artifactory structure](http://rprakashg.io/images/artifactory.jpg)
+![artifactory structure](http://rprakashg.github.io/images/artifactory.jpg)
