@@ -2,7 +2,7 @@
 date: "2023-12-10"
 author: "Ram Gopinathan"
 published: true
-title: "Configuration management with Red Hat Advanced Cluster Management"
+title: "Configuration management with Red Hat Advanced Cluster Management for Kubernetes"
 categories: ["Platform"]
 tags: ["OpenShift", "Platform", "Kubernetes"]
 archived: false
