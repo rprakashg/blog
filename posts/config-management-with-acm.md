@@ -17,24 +17,31 @@ The governance feature in Red Hat Advanced Cluster Management for Kubernetes all
 In addition to the tools mentioned earlier we are also going to leverage a Kustomize plugin called PolicyGenerator. For more info on the plugin head over to [this](https://github.com/open-cluster-management-io/policy-generator-plugin) github repository. This plugin allows us to dynamically generate policy resources based on a manifest file.
 
 For the purposes of this article I have provisioned two clusters in AWS. You can see this in the screen shot of clusters section of advanced cluster management for kubernetes (ACM) hub cluster 
+
 ![clusters](../src/images/clusters.png)
+
 First cluster is the management cluster cluster running Red Hat Advanced Cluster Management for Kubernetes. Second cluster "ocp-dev" is provisioned in AWS east region and is meant to be used for running workloads.
 
 For demonstration purposes we are going to use a gatekeeper policy to deny container latest tag in DaemonSet, Deployment as well as StatefulSet and two RHACM policies, one to install and configure Red Hat supported version of Gatekeeper and the other to install and configure Crunchy Postgresql database. All the policies are grouped into policysets namely acm-policyset and gatekeeper-policyset to better organize the policies. Since in this demo we only have 3 policies we didn't really need to use policysets but in real world you might have lots of policies and hopefully this helps as a reference,
 
 Lets examine the Policy Generator manifests for both ACM and gatekeeper policysets. Screen capture below shows the manifest file for ACM policies used in this demo
+
 ![acm-policies](../src/images/policygeneratormanifest.png)
+
 You can see the section for default settings for all policies included in the set as well as two policies for installing gatekeeper and postgresql operator.
 
 Screen capture below shows the manifest file for gatekeeper policies used in this demo
+
 ![gatekeeper-policies](../src/images/gatekeepermanifest.png)
 
 In the Kustomization file we are going to reference both manifest files under generators section as shown below 
+
 ![kustomization](../src/images/kustomization.png)
 
 Next thing we need to do is to use the Application life cycle management feature of Red Hat Advanced Cluster Management for Kubernetes to run kustomize and dynamically generate policy resources and deploy them to hub cluster. We are using ArgoCD and GitOps so when changes are made in git repo ACM can automatically sync those changes to hub cluster. Once the policy resources are created in hub cluster, ACM will propagate them to target cluster based on the placement rule.
 
 In the ArgoCD application resource shown in screen capture below you can see that under source I'm referencing the github repo as well as path where policy manifests are defined and the target revision to use. I'm also specifying under destination namespace where I want the policy resources to be created.
+
 ![argoapp](../src/images/argoapp.png)
 
 Before we can create this ArgoCD application we need to perform couple of tasks. 
