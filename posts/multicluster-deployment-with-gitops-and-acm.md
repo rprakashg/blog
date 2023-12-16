@@ -143,9 +143,9 @@ Screen capture below shows the updates to the kustomization file made by the CI 
 
 ![fileschanged](../src/images/fileschanged.png)
 
-Now we could have notified the ops to approve the changes or auto approve from pipeline but for the purposes of this article I'm just going to manually approve the changes and delete the branch.
+Now we could have notified the ops to approve the changes or auto approve from pipeline but for the purposes of this article I'm just going to manually approve the changes and delete the branch. Also notice in the pipeline above that I do not have single kubectl command or helm command to deploy the application to cluster also I don't have to be concerned about credentials to connect to cluster etc.
 
-Steps below are one time tasks that you will need to do on the ACM hub cluster.
+Steps below are one time tasks that you will need to do on the ACM hub cluster. You can pretty much do this one time for every service and remove how workloads get deployed to clusters from pipelines. I think this is huge productivity win for developers.
 
 * Step 1: Define a placement resource in openshift-gitops namespace to discover production clusters to deploy this getting started application. For the purposes of this article I've labelled both "ocpeast" and "ocpwest" clsuters with environment=production and I'm going to use that when defining the placement resource as shown in yaml snippet below
 
