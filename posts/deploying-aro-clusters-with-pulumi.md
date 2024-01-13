@@ -46,7 +46,7 @@ Run command below to set the Location on azure-native pulumi provider
 pulumi config set azure-native:location EastUS
 ```
 
-To deploy the Azure RedHat OpenShift cluster with pulumi we can simply run `pulumi up`. Cluster provisioning takes about . You can see output from my environment in the screen capture below
+To deploy the Azure RedHat OpenShift cluster with pulumi we can simply run `pulumi up`. Cluster provisioning takes about 50 minutes. You can see output from my environment in the screen capture below
 
 ![pulumiup](../src/images/pulumiup.png)
 
