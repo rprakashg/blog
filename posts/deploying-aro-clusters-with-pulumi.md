@@ -91,6 +91,7 @@ and all the cluster infrastructure resources provisioned in `aro-infra-rg` as sh
 
 ![aro-infra-rg](../src/images/aro-infra-rg.png)
 
+We can run `pulumi destroy` to delete all the cluster resources. Be sure to do this after you no longer need the resources so that you won't incur any unnecessary charges in Azure
 
 Hope this was helpful and helps you start getting hands on with Azure RedHat OpenShift. If you have any questions about this post or OpenShift please reach out to me via any of the contact methods listed in my blog
 
