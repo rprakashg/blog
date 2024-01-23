@@ -8,11 +8,12 @@ tags: ["RHACS", "RedHat", "Developer", "Tools", "Github" ]
 archived: false
 ---
 
-If you are a kubernetes developer and you are using Github and Red Hat Advanced Cluster Security for kubernetes, you are going to find yourselves having to run roxctl which is a command line utility provided with Red Hat Advanced Cluster security from your CICD pipelines. These tools aren't installed on github runners by default and you are going to have to download and install this yourself within your CICD pipeline. I found myself doing this over and over for various demos I worked on and decided to write a custom action to do just that. 
+If you are a kubernetes developer and you are using Github and Red Hat Advanced Cluster Security for kubernetes, you are going to find yourselves having to run roxctl from your CICD pipelines. If you are not familiar with `roxctl`, it's is a command line utility provided with Red Hat Advanced Cluster security for Kubernetes. These tools aren't installed on github runners by default and you are going to have to download and install this yourself within your CICD pipelines. I found myself doing this over and over for various demos I worked on and decided to write a custom action to do just that. 
 
 [Here](https://github.com/rprakashg-redhat/setup-roxctl) is the Github repository for the setup-roxctl action. 
 
-# Usage
+Usage
+
 ```yaml
 - uses: github.com/rprakashg-redhat/setup-roxctl@main
   with:
@@ -21,18 +22,16 @@ If you are a kubernetes developer and you are using Github and Red Hat Advanced 
     version: ""
 ```
 
-# Scenarios
-- [Download latest version](#download-latest-version)
-- [Download specific version](#download-specific-version)
+This action is written in typescript and will download platform specific version of the roxctl cli. Input to this action is version which is optional. If you do not specify any value the action will download the latest version of roxctl cli. Below are few sample usage Scenarios 
 
-## Download latest version
+Download latest version
 ```yaml
 - uses: rprakashg-redhat/setup-roxctl@main
   with:
     version: "latest"
 ```
 
-## Download specific version
+Download specific version (4.3.4)
 ```yaml
 - uses: rprakashg-redhat/setup-roxctl@main
   with:
