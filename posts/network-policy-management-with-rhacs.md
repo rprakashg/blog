@@ -131,7 +131,7 @@ and the generate network policies now show no policies need to be generated.
 
 Hope this helps
 
-As always reach out to me if you have any questions about this post or want to learn how Red Hat Advanced Cluster Security can help you in your organization.
+As always reach out to me if you have any questions about this post or want to learn how Red Hat Advanced Cluster Security for Kubernetes can help you in your organization.
 
 Thanks,
 Ram

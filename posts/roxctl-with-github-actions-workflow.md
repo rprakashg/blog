@@ -8,14 +8,14 @@ tags: ["RHACS", "RedHat", "Developer", "Tools", "Github" ]
 archived: false
 ---
 
-If you are a kubernetes developer and you are using Github and Red Hat Advanced Cluster Security for kubernetes, you are going to find yourselves having to run roxctl from your CICD pipelines. If you are not familiar with `roxctl`, it's is a command line utility provided with Red Hat Advanced Cluster security for Kubernetes. These tools aren't installed on github runners by default and you are going to have to download and install this yourself within your CICD pipelines. I found myself doing this over and over for various demos I worked on and decided to write a custom action to do just that. 
+If you are a kubernetes developer and you are using Github and Red Hat Advanced Cluster Security for kubernetes, you are going to find yourselves having to run roxctl from your CICD pipelines. If you are not familiar with `roxctl`, it's is a command line utility provided with Red Hat Advanced Cluster security for Kubernetes that you can use within your CICD pipelines to do things like running container vulnerability scans, container compliance checks based on system policies stored in RHACS, build time network policy generation and many other features. These tools aren't installed on github runners by default and you are going to have to download and install this yourself within your CICD pipelines. I found myself doing this over and over for various demos I worked on and decided to write a custom action to do just that. 
 
 [Here](https://github.com/rprakashg-redhat/setup-roxctl) is the Github repository for the setup-roxctl action. 
 
 Usage
 
 ```yaml
-- uses: github.com/rprakashg-redhat/setup-roxctl@main
+- uses: rprakashg-redhat/setup-roxctl@main
   with:
     # Version of roxctl to be downloaded
     # Default: latest
