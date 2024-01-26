@@ -4,6 +4,7 @@ import Layout from "../components/layout"
 import "./blog-post.css"
 
 import Sidebar from "../components/sidebar/Sidebar"
+import { Disqus } from "gatsby-plugin-disqus"
 
 const BlogPost = (props) => {
   const post = props.data.markdownRemark
@@ -11,6 +12,7 @@ const BlogPost = (props) => {
   const siteUrl = props.data.site.siteMetadata.url
   const url = `${siteUrl}${props.pageContext.slug}`
   const tags = post.frontmatter.tags
+  
   const disqusConfig = {
     url: siteUrl,
     identifier: post.id,
@@ -29,7 +31,8 @@ const BlogPost = (props) => {
             <small className="d-block text-info">
               <i>Published on {post.frontmatter.date} by {post.frontmatter.author}</i>
             </small>
-            <div dangerouslySetInnerHTML={{ __html: post.html }} />  
+            <div dangerouslySetInnerHTML={{ __html: post.html }} />
+            <Disqus config={disqusConfig} />
           </div>
         </div>
       </div>

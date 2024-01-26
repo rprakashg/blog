@@ -95,5 +95,11 @@ module.exports = {
         ]
       }
     },
+    {
+      resolve: `gatsby-plugin-disqus`,
+      options: {
+          shortname: `rprakashg-github-io`
+      }
+    }
   ],
 }
