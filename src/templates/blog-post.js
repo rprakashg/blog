@@ -14,7 +14,7 @@ const BlogPost = (props) => {
   const tags = post.frontmatter.tags
   
   const disqusConfig = {
-    url: siteUrl,
+    url: url,
     identifier: post.id,
     title: post.title
   }
