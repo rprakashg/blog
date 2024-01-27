@@ -14,7 +14,7 @@ I recently posted about a custom github action that can be leveraged to install 
 * [acs-image-check](https://github.com/rprakashg-redhat/acs-image-check)
 
 ## acs-image-scan
-This action will run a container vulnerability scan on a specified image. Action will save the scan output file and upload that as a workflow artifact. https://github.com/setup-roxctl). Workflow accepts bunch of input parameters which you can see in the [action.yaml](https://github.com/rprakashg-redhat/acs-image-scan/blob/main/action.yaml). 
+This action will run a container vulnerability scan on a specified image. Action will save the scan output file and upload that as a workflow artifact. Workflow accepts bunch of input parameters which you can see in the [action.yaml](https://github.com/rprakashg-redhat/acs-image-scan/blob/main/action.yaml). 
 
 ### Usage
 
