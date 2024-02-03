@@ -5,19 +5,20 @@
   "version": "1.0.0",
   "author": "rprakashg <https://github.com/rprakashg>",
   "dependencies": {
-    "bootstrap": "^5.0.2",
-    "gatsby": "^3.10.2",
+    "bootstrap": "^5.3.2",
+    "gatsby": "^3.15.0",
     "gatsby-plugin-disqus": "^1.2.6",
-    "gatsby-plugin-emotion": "^6.10.0",
+    "gatsby-plugin-emotion": "^6.15.0",
     "gatsby-plugin-google-fonts": "^1.0.1",
-    "gatsby-plugin-image": "^1.10.1",
-    "gatsby-plugin-sharp": "^4.16.1",
-    "gatsby-remark-images": "^6.19.0",
-    "gatsby-remark-prismjs": "^5.7.0",
-    "gatsby-source-filesystem": "^3.10.0",
-    "gatsby-transformer-remark": "^4.7.0",
-    "gatsby-transformer-sharp": "^3.10.0",
-    "gatsby-transformer-yaml": "^3.10.0",
+    "gatsby-plugin-google-gtag": "^5.13.1",
+    "gatsby-plugin-image": "^1.15.0",
+    "gatsby-plugin-sharp": "^4.25.1",
+    "gatsby-remark-images": "^6.25.0",
+    "gatsby-remark-prismjs": "^5.12.0",
+    "gatsby-source-filesystem": "^3.15.0",
+    "gatsby-transformer-remark": "^4.12.0",
+    "gatsby-transformer-sharp": "^3.15.0",
+    "gatsby-transformer-yaml": "^3.15.0",
     "gh-pages": "^4.0.0",
     "lodash": "^4.17.21",
     "path": "^0.12.7",
@@ -26,10 +27,10 @@
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-helmet": "^6.1.0",
-    "react-icons": "^4.2.0"
+    "react-icons": "^4.12.0"
   },
   "devDependencies": {
-    "prettier": "^1.17.1"
+    "prettier": "^1.19.1"
   },
   "keywords": [
     "kubernetes",

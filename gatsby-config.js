@@ -100,6 +100,20 @@ module.exports = {
       options: {
           shortname: `rprakashg-github-io`
       }
-    }
+    },
+    {
+      resolve: `gatsby-plugin-google-gtag`,
+      options: {
+        trackingIds: [
+          "G-FCCC4Z87JP"
+        ],
+        pluginConfig: {
+          head: true,
+          respectDHT: true,
+          exclude: ["/preview/**", "/do-not-track/me/too/"],
+          delayOnRouteUpdate: 0,
+        }
+      },
+    },
   ],
 }
