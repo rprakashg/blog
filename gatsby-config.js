@@ -107,9 +107,11 @@ module.exports = {
         trackingIds: [
           "G-FCCC4Z87JP"
         ],
+        gtagConfig: {
+          send_page_view: true,
+        },
         pluginConfig: {
-          head: true,
-          respectDHT: true,
+          head: false,
           exclude: ["/preview/**", "/do-not-track/me/too/"],
           delayOnRouteUpdate: 0,
         }
