@@ -5,7 +5,7 @@ import { StaticImage } from "gatsby-plugin-image"
 const Bio = ({ author, tagline }) => {
     return (
         <div className="bio-main w-75">
-            <StaticImage src="../../images/profile.jpeg" className="profile-img" alt="" />
+            <StaticImage src="../../images/ram-profile.jpeg" className="profile-img" alt="" />
             <h3 className="mt-2 author-bio">{author}</h3>
             <small className="text-muted">{tagline}</small>
         </div>

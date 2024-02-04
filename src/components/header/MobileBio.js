@@ -1,7 +1,7 @@
 import React from "react"
 
 import "./header.css"
-import ram from "../../images/ram.jpg"
+import ram from "../../images/ram-profile.jpeg"
 
 const MobileBio = (props) => {
 
