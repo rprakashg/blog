@@ -28,7 +28,7 @@ When I was first trying out the techdocs capability configuring backstage to do 
       --entity $NAMESPACE/$KIND/$REPO_NAME
 ```
 
-I was using k8s namespace as $NAMESPACE value. S3 router expects this to be default and also Kind should be Component matching the entity in catalog. After I fixed the pipeline I'm now able to view the static HTML files built in a CICD pipeline from backstage as you can see from the screen capture above.
+I was using k8s namespace as $NAMESPACE value. S3 router expects this to be **`default`** and also Kind should be Component matching the entity in catalog. After I fixed the pipeline I'm now able to view the static HTML files built in a CICD pipeline from backstage as you can see from the screen capture above.
 
 
 Hope this helps,
