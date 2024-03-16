@@ -156,7 +156,7 @@ helm show values openshift-helm-charts/redhat-developer-hub > values.yaml
 ```
 
 Customize the values yaml. You can see the version I used for my installation [here](https://github.com/rprakashg-redhat/rhdh-on-eks/blob/main/deploy/rhdh/values.yaml).
-Few customizations that are worth calling out are below
+Few other customizations to values file that are worth calling out are below
 
 1) Specified the custom hostname `devhub.sandbox2841.opentlc.com` under section global of values yaml
 2) Since I was using HAProxy ingress under upstream section I had to enable ingress and specify className as shown in the snippet below
