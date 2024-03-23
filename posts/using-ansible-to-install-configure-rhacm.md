@@ -23,7 +23,6 @@ To install and configure ACM I first login to the OpenShift cluster where I want
 * Create an instance of multi cluster hub and wait for the hub to be ready
 * Install OpenShift GitOps Operator (ArgoCD) and wait for operator to be ready
 
-
 [![asciicast](https://asciinema.org/a/AQBvzRfPARRyRglJ8smO1FNZk.svg)](https://asciinema.org/a/AQBvzRfPARRyRglJ8smO1FNZk)
 
 Now we can switch back to Openshift console and refresh the console to check the status of ACM install and configuration. From the screen capture below you can see we now have RHACM all installed and configured
