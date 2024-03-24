@@ -3,7 +3,7 @@ date: "2023-12-15"
 author: "Ram Gopinathan"
 published: true
 title: "Multi cluster deployments with GitOps and Red Hat Advanced Cluster Management for Kubernetes"
-categories: ["Platform"]
+categories: ["Platform", "RHACM"]
 tags: ["OpenShift", "Platform", "Kubernetes"]
 archived: false
 ---
