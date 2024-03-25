@@ -7,9 +7,7 @@ categories: ["Platform", "RHACM"]
 tags: ["OpenShift", "Platform", "Kubernetes", "Management"]
 archived: false
 ---
-
-# Observability service in Red Hat Advanced Cluster Management for Kubernetes
-This is one of the capabilities provided by Red Hat Advanced Cluster Management for Kubernetes that helps platform engineering teams monitor and observe the health and capacity of clusters across entire kubernetes fleet.
+Observability service is one of the capabilities provided by Red Hat Advanced Cluster Management for Kubernetes that helps platform engineering teams monitor and observe the health and capacity of clusters across entire kubernetes fleet.
 
 ## Purpose
 Kubernetes cluster sprawl is real, we see customers deploying clusters on-premises, multi cloud and even on edge locations to run workloads. With this comes a set of management challenges for platform engineering teams. Being able to monitor the health and utilization of clusters across the entire k8s fleet is one of the challenges platform engineering teams have to solve. Typically this involves deploying a central monitoring infrastructure, select a monitoring solution (Prometheus is most common) and ensure provisioned clusters and configured to send telemetry data to this central infrastructure so they can monitor the health and utilization of clusters across the entire k8s fleet in one place. Observability service in RHACM solves this problem so our customers don't have to. We also understand that not all customers use Openshift for running workloads also some have multiple k8s distributions and as long as those clusters are imported into hub, this feature should work well as long as they are complaint with upstream k8s 
@@ -23,7 +21,7 @@ Diagram below shows various components configured when observability service is 
 
 ![observability](../src/images/acm.jpg)
 
-## Enabling the observability service
+## Automating enabling the observability service
 Observability service is not enabled by default, steps to enable this feature is documented very well in RHACM product documentation [here](https://access.redhat.com/documentation/en-us/red_hat_advanced_cluster_management_for_kubernetes/2.10/html/observability/enabling-observability-service). I recommend reading that. I wrote an ansible playbook that automates this. You can check out the ansible playbook [here](https://github.com/rprakashg-redhat/rhacm-demos/blob/main/observability/configure-multiclusterobservability.yaml)
 
 [![asciicast](https://asciinema.org/a/yfJKLHpEXkar3lzNibOgNSgW0.svg)](https://asciinema.org/a/yfJKLHpEXkar3lzNibOgNSgW0)
