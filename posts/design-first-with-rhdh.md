@@ -53,15 +53,15 @@ Click Next to review everything and click create. See screen capture below
 
 ![apidef3](../src/images/apidef3.png)
 
-Scaffolder will now execute all the actions defined in the template and you can see link to newly opened PR shown as outputs. **Ignore errors because I put myself as reviewer which is why github was complaining because author cannot also be a reviewer. See screen capture below
+Scaffolder will now execute all the actions defined in the template and you can see link to newly opened PR shown as outputs. **Ignore errors because I put myself as reviewer which is why github was complaining because author cannot also be a reviewer**. See screen capture below
 
 ![scaffolder](../src/images/scaffolder.png)
 
-For demonstration purposes I'm going to click on the PR link to view the PR. We can see that our github actions workflow kicked off and it updated the location entity and added the new api to the list of targets. Workflow also updates the PR with a comment to let users know that this change was made to the PR. See screen capture below
+I'm going to click on the PR link to view the PR. We can see that our github actions workflow kicked off and it updated the location entity and added the new api to the list of targets. Workflow also updates the PR with a comment to let users know that this change was made to the PR. See screen capture below
 
 ![pr](../src/images/pr1.png)
 
-We can also check out the files changed in the PR. See screen capture below. Cool thing here is now all the parties, developers, consumers, designers etc. involved in this API can collaborate on the PR together.
+We can also check out the files changed in the PR. See screen capture below. Cool thing here is API developers, API consumers, API designers involved in this API can all collaborate on the PR together.
 
 ![filesinpr](../src/images/filesinpr.png)
 
