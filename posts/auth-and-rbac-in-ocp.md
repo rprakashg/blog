@@ -112,7 +112,7 @@ Select `okta` for login and we will be redirected to `Okta` signin page as shown
 
 ![oktaauth](../src/images/authmsmith.png)
 
-Type in credentials for Mark Smith and click `Sign In`. After successful authentication we are going to get redirected back to OpenShift web console and will be logged into console successfully as shown in screen capture below
+Type in credentials for Mark Smith and click `Sign In`. After successful authentication we are going to get redirected back to OpenShift web console and will be logged into console successfully as shown in screen capture below. We can also see that Mark has full cluster admin privileges.
 
 ![msmith](../src/images/smithclusteradmin.png)
 
