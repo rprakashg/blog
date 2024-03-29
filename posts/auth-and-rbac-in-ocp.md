@@ -128,6 +128,11 @@ Now lets clear browser cache and log back into the cluster as Ram G and examine 
 
 We can see from the screen captures for administrator and developer perspectives that Ram G can only see resources within the namespace `teamb` because he is a member of group `teamb` in okta
 
+![adminramg](../src/images/ramgadminperspective.png)
+
+![devramg](../src/images/ramgdevperspective.png)
+
+
 ## Resources
 If you want to learn more about oauth and identity providers in openshift check out this [article](https://docs.openshift.com/container-platform/4.15/authentication/understanding-identity-provider.html)
 
