@@ -112,7 +112,7 @@ Select `okta` for login and we will be redirected to `Okta` signin page as shown
 
 ![oktaauth](../src/images/authmsmith.png)
 
-Type in credentials for Mark Smith and click `Sign In`. After successful authentication we are going to get redirected back to OpenShift web console and will be logged into console successfully as shown in screen capture below
+Type in credentials for Mark Smith and click `Sign In`. After successful authentication we are going to get redirected back to OpenShift web console and will be logged into console successfully as shown in screen capture below. We can also see that Mark has full cluster admin privileges.
 
 ![msmith](../src/images/smithclusteradmin.png)
 
@@ -127,6 +127,11 @@ We can see from the screen captures for administrator and developer perspectives
 Now lets clear browser cache and log back into the cluster as Ram G and examine what the experience looks like for Ram G who is a developer working with `Team B`
 
 We can see from the screen captures for administrator and developer perspectives that Ram G can only see resources within the namespace `teamb` because he is a member of group `teamb` in okta
+
+![adminramg](../src/images/ramgadminperspective.png)
+
+![devramg](../src/images/ramgdevperspective.png)
+
 
 ## Resources
 If you want to learn more about oauth and identity providers in openshift check out this [article](https://docs.openshift.com/container-platform/4.15/authentication/understanding-identity-provider.html)
