@@ -9,17 +9,13 @@ archived: false
 ---
 I've done quite a bit of work on windows containers on openshift and decided to write a 4 part series to deep dive into this. So here is the break down of what will be covered. 
 
-* [Part 1](/windows-container-support-in-ocp-1)
-which is this post, we are going to cover how to enable windows container support and add windows nodes onto cluster. We are also going to deploy a sample application to test 
+* [Part 1](/windows-container-support-in-ocp-1) which is this post, we are going to cover how to enable windows container support and add windows nodes onto cluster. We are also going to deploy a sample application to test 
 
-* [Part 2](/windows-container-support-in-ocp-2)
-we are going to cover using persistent storage and go over some of the usecases and scenarios that you might run into in real world
+* [Part 2](/windows-container-support-in-ocp-2) we are going to cover using persistent storage and go over some of the usecases and scenarios that you might run into in real world
 
-* [Part 3](/windows-container-support-in-ocp-3)
-we are going to cover autoscaling windows workloads specific custom metrics autoscaler as HPA and VPA is still not supported for windows containers yet. We are also going to cover scaling windows machineset
+* [Part 3](/windows-container-support-in-ocp-3) we are going to cover autoscaling windows workloads specific custom metrics autoscaler as HPA and VPA is still not supported for windows containers yet. We are also going to cover scaling windows machineset
 
-* [Part 4](/windows-container-support-in-ocp-4)
-we are going to cover monitoring and observability options for windows workloads. We will examine some of the gaps that exist today for windows workloads and some approaches to address these gaps
+* [Part 4](/windows-container-support-in-ocp-4) we are going to cover monitoring and observability options for windows workloads. We will examine some of the gaps that exist today for windows workloads and some approaches to address these gaps
 
 ### Prerequisites
 Before we can enable windows container support on the cluster we need to configure Hybrid networking. Run command below. Read more about this [here](https://docs.openshift.com/container-platform/4.13/networking/ovn_kubernetes_network_provider/configuring-hybrid-networking.html)
@@ -66,7 +62,7 @@ metadata:
 * Add windows workernodes by creating a `Machineset` resource.
 All of the windows machineset creation steps are automated in this [script](https://github.com/rprakashg-redhat/windemos/blob/main/install/tasks/add-windows-workers.yaml). Script is pretty self explanatory so I won't go into too much detail here.
 
-Before running the Ansible playbook we need to generate an ssh key for WMCO which will be used to authenticate with windwos nodes and perform actions like installing and configuring prometheus windows exporter etc. We can generate the ssh key by running command below
+Before running the Ansible playbook we need to generate an ssh key for WMCO which is used to authenticate with windows nodes and perform actions like installing and configuring prometheus windows exporter etc. We can generate the ssh key by running command below
 
 ```
 ssh-keygen  -t ed25519 -C "$USER@aws-win" -f ~/.ssh/aws-win -N ""
@@ -84,6 +80,10 @@ I've kicked off the playbook and it completed successfully
 [![asciicast](https://asciinema.org/a/TZpbfk56sqG23U5XDOettN74U.svg)](https://asciinema.org/a/TZpbfk56sqG23U5XDOettN74U)
 
 We can login to Openshift web console and see that windows machine config operator was installed and configured successfully as shown in screen capture below
+
+![wmco](../src/images/wmco.png)
+
+Expand `compute` option on sidebar and select `machineset` and from the screen capture below we can see the new windows machineset created. 
 
 ![machineset](../src/images/winmachineset.png)
 
