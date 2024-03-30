@@ -1,5 +1,5 @@
 ---
-date: "2024-03-29"
+date: "2024-03-30"
 author: "Ram Gopinathan"
 published: true
 title: "Deep dive into Windows Container Support in OpenShift Container Platform"
