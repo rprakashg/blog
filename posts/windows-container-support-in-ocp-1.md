@@ -13,7 +13,7 @@ I've done quite a bit of work on windows containers on openshift and decided to 
 
 * [Part 2](/windows-container-support-in-ocp-2) we are going to cover using persistent storage and go over some of the usecases and scenarios that you might run into in real world
 
-* [Part 3](/windows-container-support-in-ocp-3) we are going to cover autoscaling windows workloads specific custom metrics autoscaler as HPA and VPA is still not supported for windows containers yet. We are also going to cover scaling windows machineset
+* [Part 3](/windows-container-support-in-ocp-3) we are going to cover autoscaling windows workloads specifically custom metrics autoscaler as HPA and VPA is still not supported for windows containers yet. We are also going to cover scaling windows machineset
 
 * [Part 4](/windows-container-support-in-ocp-4) we are going to cover monitoring and observability options for windows workloads. We will examine some of the gaps that exist today for windows workloads and some approaches to address these gaps
 
@@ -59,7 +59,7 @@ metadata:
 ...
 ```
 
-* Add windows workernodes by creating a `Machineset` resource.
+* Add windows worker nodes by creating a `Machineset` resource.
 All of the windows machineset creation steps are automated in this [script](https://github.com/rprakashg-redhat/windemos/blob/main/install/tasks/add-windows-workers.yaml). Script is pretty self explanatory so I won't go into too much detail here.
 
 Before running the Ansible playbook we need to generate an ssh key for WMCO which is used to authenticate with windows nodes and perform actions like installing and configuring prometheus windows exporter etc. We can generate the ssh key by running command below
