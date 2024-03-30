@@ -45,8 +45,8 @@ I have automated the steps to enable windows container support and add windows w
 
 There are two parts to the paybook
 
-* Install Configure Windows Machine Config Operator (WMCO)
-All the steps to install and configure WMCO are automated in this script [here](https://github.com/rprakashg-redhat/windemos/blob/main/install/tasks/enable-wmco.yaml). Script is pretty self explanatory. One thing to call out is that when we create the namespace where windows machine config operator is install where are setting a label `openshift.io/cluster-monitoring` to 'true' as shown in the jinja2 template snippet below. This will tell WMCO to also install and configure prometheus windows exporter on the nodes and perform all necessary configurations to ensure openshift cluster monitoring prometheus server scrapes metrics exposed by the windows exporter.
+* Install and configure Windows Machine Config Operator (WMCO)
+All the steps to install and configure WMCO are automated in this script [here](https://github.com/rprakashg-redhat/windemos/blob/main/install/tasks/enable-wmco.yaml). Script is pretty self explanatory. One thing to call out is that when we create the namespace where windows machine config operator is installed, we are setting a label named `openshift.io/cluster-monitoring` to 'true', see the jinja2 template snippet below. This will tell WMCO to also install and configure prometheus windows exporter on the nodes and perform all necessary configurations to ensure openshift cluster monitoring prometheus server scrapes metrics exposed by the windows exporter.
 
 ```
 ---
