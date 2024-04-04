@@ -9,7 +9,7 @@ archived: false
 ---
 In this post I'm going to walk through how you can use role base access control to segregate cluster life cycle management responsibilities between dedicated teams. Few reasons you might want to do that are:
 
-* Operating at scale, you have operational responsibilites for lots of cluster
+* Operating at scale, you have operational responsibilites for lots of clusters
 * You might have different SLAs with internal groups who are your customers running workloads on platform
 * Reducing the blast radius. For ex. accidently upgrading a cluster that you shoudln't have etc... 
 
