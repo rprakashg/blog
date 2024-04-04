@@ -11,7 +11,7 @@ In this post I'm going to walk through how you can use role base access control 
 
 * Operating at scale, you have operational responsibilites for lots of clusters
 * You might have different SLAs with internal groups who are your customers running workloads on platform
-* Reducing the blast radius. For ex. accidently upgrading a cluster that you shoudln't have etc... 
+* Reducing the blast radius. For ex. accidently upgrading a cluster that you shouldn't have etc... 
 
 Sample scenario I have set up is as follows. I've defined two cluster sets to group clusters provisioned for respective teams as shown in the table below
 
