@@ -11,11 +11,11 @@ I've done quite a bit of work on windows containers on openshift and decided to 
 
 * [Part 1](/windows-container-support-in-ocp-1) which is this post, we are going to cover how to enable windows container support and add windows nodes onto cluster. We are also going to deploy a sample application to test 
 
-* [Part 2](/windows-container-support-in-ocp-2) we are going to cover using persistent storage and go over some of the usecases and scenarios that you might run into in real world
+* [Part 2]() we are going to cover using persistent storage and go over some of the usecases and scenarios that you might run into in real world
 
-* [Part 3](/windows-container-support-in-ocp-3) we are going to cover autoscaling windows workloads specifically custom metrics autoscaler as HPA and VPA is still not supported for windows containers yet. We are also going to cover scaling windows machineset
+* [Part 3]() we are going to cover autoscaling windows workloads specifically custom metrics autoscaler as HPA and VPA is still not supported for windows containers yet. We are also going to cover scaling windows machineset
 
-* [Part 4](/windows-container-support-in-ocp-4) we are going to cover monitoring and observability options for windows workloads. We will examine some of the gaps that exist today for windows workloads and some approaches to address these gaps
+* [Part 4]() we are going to cover monitoring and observability options for windows workloads. We will examine some of the gaps that exist today for windows workloads and some approaches to address these gaps
 
 ### Prerequisites
 Before we can enable windows container support on the cluster we need to configure Hybrid networking. Run command below. Read more about this [here](https://docs.openshift.com/container-platform/4.13/networking/ovn_kubernetes_network_provider/configuring-hybrid-networking.html)
