@@ -24,7 +24,7 @@ terraform apply
 ```
 Terraform scripts executed successfully and we can see the information about the EC2 instance in output as shown in screen capture below
 
-![tfout](../src/images/tf_output.png)
+![tfout](../src/images/tfout.png)
 
 ## Configuring the self hosted runner
 We are going to use Ansible to configure the self hosted runner. Switch to configure directory. Copy the public dns of EC2 instance from the terraform output and update the inventory file. See screen capture below
