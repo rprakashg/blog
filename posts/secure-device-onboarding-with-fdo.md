@@ -90,7 +90,7 @@ During device onboarding, the Ownership Voucher's authenticity is verified using
 ## What's Red Hat doing with FDO?
 We have developed an FDO implementation using RUST. Additionally, we are also developing an Operator for Kubernetes, which you can use to deploy FDO components on OpenShift or other Kubernetes distributions of your choice. You can find the links to upstream projects under the resources section.
 
-RHEL for Edge, which is our edge-optimized OS for edge devices, includes a native FDO client, which is a key component in initiative onboarding flows from the device.
+RHEL for Edge, which is our edge-optimized OS for edge devices, includes a native FDO client, which is a key component in initiating onboarding flows from the device.
 
 ## Resources
 Below are some helpful resources on FDO:
