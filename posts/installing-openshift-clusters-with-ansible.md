@@ -28,7 +28,12 @@ The installer also requires an SSH public key in the config file. To avoid havin
 Additionally, depending on a specific customer's situation, there were additional steps that needed to be done on the cluster for the demo. In some cases, I was doing this through the UI, and in others, I would run an Ansible script against the cluster. As you can already tell, the whole process wasn't smooth end-to-end. 
 
 ## Using ansible to automate installing Openshift clusters on AWS
-I decided to use a custom Ansible module to automate installing OpenShift clusters on AWS and avoid all the manual steps I used to perform earlier, as well as roles to automate scenario-based customer demos. In this post, I'm only going to cover the Python module. The Python module is in a new Ansible collection that I'm creating. Check it out in this GitHub [repo](https://github.com/rprakashg/demos). I have not published this collection to galaxy.ansible.com yet, as I have more work to do, such as wiring up some unit and integration tests, creating a pipeline to release the collection, etc.
+I decided to use a custom Ansible module to automate installing OpenShift clusters on AWS and avoid all the manual steps I used to perform earlier. In this post, I'm only going to cover the Python module. The Python module is in a new Ansible collection that I'm creating. This new collection will also contain scenario specific customer demos as ansible roles. Here are some examples
+* Install configure Openshift AI demos
+* Install configure RHACM demos
+* Install configure ACS demos
+
+I have not published this collection to galaxy.ansible.com yet, as I have more work to do, such as wiring up some unit and integration tests, creating a pipeline to release the collection, etc. Check it out in this GitHub [repo](https://github.com/rprakashg/demos). 
 
 If you decide to check this out, you can install this collection from GitHub directly by running the command below:
 
