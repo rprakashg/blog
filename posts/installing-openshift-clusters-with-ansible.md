@@ -7,7 +7,7 @@ categories: ["openshift", "redhat"]
 tags: ["containers", "platform", "kubernetes", "openshift", "redhat"]
 archived: false
 ---
-OpenShift is a big part of many of the demos and conversations I have with customers since joining Red Hat. We provide a CLI tool called openshift-install that automates the installation of OpenShift clusters. If you are new to OpenShift and not sure how to install it, I recommend checking out this article, which goes into the details. In this post, I'm going to walk through how I used to install OpenShift clusters on AWS and then introduce you to a new Ansible collection I'm building to consolidate all my demos. Even though we have a lot of pre-built demos on our demo platform, I prefer to build all my demos myself for a few reasons.
+OpenShift is a big part of many of the demos and conversations I have with customers since joining Red Hat. We provide a CLI tool called openshift-install that automates the installation of OpenShift clusters. If you are new to OpenShift and not sure how to install it, I recommend checking out this [article](https://docs.openshift.com/container-platform/4.16/installing/overview/index.html), which goes into the details. In this post, I'm going to walk through how I used to install OpenShift clusters on AWS and then introduce you to a new Ansible collection I'm building to consolidate all my demos. Even though we have a lot of pre-built demos on our demo platform, I prefer to build all my demos myself for a few reasons.
 
 * It gives me hands-on experience with our products.
 * I build my demos with the mindset that I'm building them for production deployment.
