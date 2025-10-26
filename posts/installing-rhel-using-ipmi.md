@@ -89,7 +89,7 @@ To make the installation completely hands-free, your ISO needs a **custom kickst
 
 I’ve automated all of that using **Ansible**, so the install runs start to finish without any manual steps.
 If you’d like to try that out, check out my GitHub repo here:  
-👉 [rprakashg-rh/enlit-demo](http://github.com/rprakashg-rh/enlit-demo)
+👉 [rprakashg-rh/enlit-build](http://github.com/rprakashg-rh/enlit-build)
 
 ---
 
