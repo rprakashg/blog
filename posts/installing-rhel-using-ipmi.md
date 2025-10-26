@@ -2,7 +2,7 @@
 date: "2025-10-26"
 author: "Ram Gopinathan"
 published: true
-title: "Installing Red Hat Enterprise Linux Using IPMI"
+title: "Installing Red Hat Enterprise Linux on baremetal servers Using IPMI"
 categories: ["RHEL", "linux", "os"]
 tags: ["OS", "RHEL", "Linux"]
 archived: false
