@@ -8,7 +8,7 @@ tags: ["OS", "RHEL", "Linux"]
 archived: false
 ---
 
-In this post, I’ll walk through how to perform a fully automated and unattended install of **Red Hat Enterprise Linux (RHEL)** on a bare-metal server **remotely using the IPMI web interface**. For readers who are not familiar with IPMI, IPMI stands for integrated platform management interface. Its am open standard for hardware management. I've long been wanting to write about this but finally getting to it now. 
+In this post, I’ll walk through how to perform a fully automated and unattended install of **Red Hat Enterprise Linux (RHEL)** on a bare-metal server **remotely using the IPMI web interface**. For readers who are not familiar with IPMI, IPMI stands for integrated platform management interface. Its an open standard for hardware management. I've long been wanting to write about this but finally getting to it now. 
 
 For this demonstration, we’ll install RHEL on an **Advantech ECU579** server. This system is equipped with an **ASPEED 2500 BMC** chip and supports **IPMI 2.0** over the onboard LAN interface.
 
