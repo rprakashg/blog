@@ -1,5 +1,5 @@
 ---
-date: "2025-10-23"
+date: "2025-10-26"
 author: "Ram Gopinathan"
 published: true
 title: "Installing Red Hat Enterprise Linux Using IPMI"
