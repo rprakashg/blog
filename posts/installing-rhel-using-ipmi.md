@@ -85,9 +85,9 @@ After the installation is complete you should see a screen like below
 
 ### About the Kickstart File
 
-To make the installation completely hands-free, your ISO needs a **custom kickstart configuration**. Without it, the installer will start a **VNC session**, and you’ll have to complete setup manually using a VNC client.
+To make the installation completely hands-free, your ISO needs a **custom kickstart configuration**. Without it, the installer will start a **VNC session**, and you’ll have to complete setup manually using a VNC client, this is because of the graphical installer. Who uses GUI installer right? :) 
 
-I’ve automated all of that using **Ansible**, so the install runs start to finish without any manual steps.
+I’ve automated all the steps for building ISO with custom kickstart along with cloud-init for initializating the provisioned system using **Ansible**, so the install runs start to finish without any manual steps.
 If you’d like to try that out, check out my GitHub repo here:  
 👉 [rprakashg-rh/enlit-build](http://github.com/rprakashg-rh/enlit-build)
 
