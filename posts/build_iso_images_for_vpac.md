@@ -1,5 +1,5 @@
 ---
-date: "2025-11-14"
+date: "2025-11-17"
 author: "Ram Gopinathan"
 published: true
 title: "Using Ansible and Image Builder to Automate Customized RHEL Image Builds for Virtualization Hosts Running Virtualized Protection and Control Software"
