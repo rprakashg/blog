@@ -16,7 +16,7 @@ jobs:
     - name: setup node
       uses: actions/setup-node@v3
       with:
-        node-version: '>=18.x'
+        node-version: '>=22.0.0'
         scope: '@rprakashg'
       env:
         GH_TOKEN: ${{ secrets.TOKEN }}

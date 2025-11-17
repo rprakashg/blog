@@ -48,6 +48,7 @@ Then we are going to run the playbook as shown in the command below
 ```sh
 ansible-playbook -i inventory setup_imagebuilder.yml
 ```
+
 If everything goes well we should see an output like below screen capture
 
 ![setup_imagebuilder](../src/images/setup_imagebuilder.jpg)
@@ -219,4 +220,5 @@ We can now download this file from the image builder host and perform IPMI based
 Hope this post was helpful, as always feel free to reach out to me if you have any questions about this post.
 
 Thanks,
+
 Ram
