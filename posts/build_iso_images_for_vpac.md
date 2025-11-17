@@ -2,12 +2,12 @@
 date: "2025-11-17"
 author: "Ram Gopinathan"
 published: true
-title: "Using ansible and image builder to create customized RHEL system images for provisioning systems that run virtualized protection and control software"
+title: "Using ansible and image builder to create customized RHEL system images for provisioning systems that run virtualized protection automation and control software"
 categories: ["RHEL", "linux", "os"]
 tags: ["OS", "RHEL", "Linux", "ImageBuilder"]
 archived: false
 ---
-In my last [post](https://rprakashg.github.io/installing-rhel-using-ipmi/) I covered how to perform an IPMI install using a custom ISO but did not go into too much details on how to build a customized ISO for provisioning systems that run virtualized protection and control applications. In this post I will walk through how to use Ansible and Imagebuilder to achieve just that
+In my last [post](https://rprakashg.github.io/installing-rhel-using-ipmi/) I covered how to perform an IPMI install using a custom ISO but did not go into too much details on how to build a customized ISO for provisioning systems that run virtualized protection automation and control applications. In this post I will walk through how to use Ansible and Imagebuilder to achieve just that
 
 ## Provisioning a Host Machine as Image Builder
 First thing we will need to do is provision imagebuilder host machine. I'm going to use a demo AWS environment and provision an EC2 instance using the RHEL 9 AMI provided by Red Hat. I've SSH'd into the host and connected it to Red Hat subscription and have ensure the system is up to date with all the packages. I've also updated my ansible inventory file like below
@@ -54,7 +54,7 @@ If everything goes well we should see an output like below screen capture
 ![setup_imagebuilder](../src/images/setup_imagebuilder.jpg)
 
 ## Building a standardized custom image for provisioning RHEL based systems that run virtualized protection and control applications
-Now that the imagebuilder server is configured and running we can now use it to build a standardized custom image with an anaconda kickstart file that automates provisioning RHEL based systems for deploying virtualization protection and control applications. Lets now look at how we are going to achieve that.
+Now that the image builder server is configured and running we can now use it to build a standardized custom image with an anaconda kickstart file that automates provisioning RHEL based systems for deploying virtualization protection and control applications. Lets now look at how we are going to achieve that.
 
 ### Defining a standardized base image
 First thing we will need to do is to define a standardized base image. We can achieve this by creating an ansible vars file. Image definition looks like the below yaml snippet. 
