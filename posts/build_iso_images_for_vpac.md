@@ -2,7 +2,7 @@
 date: "2025-11-17"
 author: "Ram Gopinathan"
 published: true
-title: "Using Ansible and Image Builder to Automate Customized RHEL Image Builds for Virtualization Hosts Running Virtualized Protection and Control Software"
+title: "Using Ansible and Image Builder to create customized RHEL system images for provisioning systems that run Virtualized Protection and Control Software"
 categories: ["RHEL", "linux", "os"]
 tags: ["OS", "RHEL", "Linux", "ImageBuilder"]
 archived: false
