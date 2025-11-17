@@ -7,10 +7,10 @@ categories: ["RHEL", "linux", "os"]
 tags: ["OS", "RHEL", "Linux", "ImageBuilder"]
 archived: false
 ---
-In my last [post](https://rprakashg.github.io/installing-rhel-using-ipmi/) I covered how to perform an IPMI install using a custom ISO but did not go into too much details on how to build a customized ISO for provisioning systems that run virtualized protection automation and control applications. In this post I will walk through how to use Ansible and Imagebuilder to achieve just that
+In my last [post](https://rprakashg.github.io/installing-rhel-using-ipmi/) I covered how to perform an IPMI install using a custom ISO but did not go into too much details on how to build a customized ISO for provisioning systems that run virtualized protection automation and control applications. In this post I will walk through how to use ansible and image builder to achieve just that
 
 ## Provisioning a Host Machine as Image Builder
-First thing we will need to do is provision imagebuilder host machine. I'm going to use a demo AWS environment and provision an EC2 instance using the RHEL 9 AMI provided by Red Hat. I've SSH'd into the host and connected it to Red Hat subscription and have ensure the system is up to date with all the packages. I've also updated my ansible inventory file like below
+First thing we will need to do is provision image builder host machine. I'm going to use a demo AWS environment and provision an EC2 instance using the RHEL 9 AMI provided by Red Hat. I've SSH'd into the host and connected it to Red Hat subscription and have ensure the system is up to date with all the packages. I've also updated my ansible inventory file like below
 
 ```yaml
 ---
@@ -24,7 +24,7 @@ all:
 ```
 
 ## Configuring the Image Builder host
-To configure the RHEL host as imagebuilder we are going to use this [role](https://github.com/rprakashg/demos/tree/main/roles/setup_imagebuilder). Role leverages infra.osbuild to configure the host as imagebuilder, additionally it add kernel rt and nfv repos to imagebuilder sources so we can install those packages references in the image definition. For more detailed information please checkout ansible code in the role. We are going to run a simple ansible playbook that leverages the role. Playbook looks like below 
+To configure the RHEL host as image builder we are going to use this [role](https://github.com/rprakashg/demos/tree/main/roles/setup_imagebuilder). Role leverages infra.osbuild to configure the host as imagebuilder, additionally it add kernel rt and nfv repos to image builder sources so we can install those packages references in the image definition. For more detailed information please checkout ansible code in the role. We are going to run a simple ansible playbook that leverages the role. Playbook looks like below 
 
 ```yaml
 - name: Configure RHEL host as image builder 
@@ -53,7 +53,7 @@ If everything goes well we should see an output like below screen capture
 
 ![setup_imagebuilder](../src/images/setup_imagebuilder.jpg)
 
-## Building a standardized custom image for provisioning RHEL based systems that run virtualized protection and control applications
+## Building a standardized custom image for provisioning RHEL based systems that run virtualized protection automation and control applications
 Now that the image builder server is configured and running we can now use it to build a standardized custom image with an anaconda kickstart file that automates provisioning RHEL based systems for deploying virtualization protection and control applications. Lets now look at how we are going to achieve that.
 
 ### Defining a standardized base image
@@ -209,13 +209,13 @@ If everything goes well we should see the playbook completed successfully withou
 
 ![build_iso](../src/images/build_iso.jpg)
 
-Since the custom ISO is in an Ansible temp directory we can ssh into the image builder host and move it to a directory under `/home` using command below
+Since the custom ISO is in an ansible temp directory we can ssh into the image builder host and move it to a directory under `/home` using command below
 
 ```sh
 sudo mv <custom iso path printed by the ansible role> .
 ```
 
-We can now download this file from the image builder host and perform IPMI based installation for provisioning virtualization hosts that run virtualized protection and control applications.
+We can now download this file from the image builder host and perform IPMI based installation for provisioning virtualization hosts that run virtualized protection automation and control applications.
 
 Hope this post was helpful, as always feel free to reach out to me if you have any questions about this post.
 
