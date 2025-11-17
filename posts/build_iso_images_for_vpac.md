@@ -205,6 +205,12 @@ See ansible code in the yaml snippet below
       name: rprakashg.vpac.build_iso
 ```
 
+Run the playbook as shown in command below
+
+```sh
+ansible-playbook -i inventory --vault-password-file <(echo "$VAULT_SECRET") build_iso.yml -e @vars/vpacsystem.yml
+```
+
 If everything goes well we should see the playbook completed successfully without errors and see an output like the screen capture below.
 
 ![build_iso](../src/images/build_iso.jpg)
