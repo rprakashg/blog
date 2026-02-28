@@ -8,8 +8,6 @@ tags: ["OS", "RHEL", "Linux", "ImageBuilder", "cloud-init"]
 archived: false
 ---
 
-# Automating post install configurations with cloud-init for Red Hat Enterprise Linux deployments on baremetal environments
-
 *Stop configuring servers by hand. Here's how cloud-init brings cloud-level automation to your physical infrastructure.*
 
 ---
